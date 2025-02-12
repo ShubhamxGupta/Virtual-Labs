@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* College Details Section */
+.clg {
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* College Name */
+.details h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* College Info */
+.info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.info p {
+    flex: 1;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.info img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Main Body Section */
+.body-main {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Card Container */
+.cse-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Buttons Section */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 2px solid orange;
+    transition: 0.3s ease-in-out;
+}
+
+/* First Button: White background, turns Orange on hover */
+.btn.white-btn {
+    background-color: white;
+    color: orange;
+}
+
+.btn.white-btn:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* Second Button: Orange background, turns White on hover */
+.btn.orange-btn {
+    background-color: orange;
+    color: white;
+}
+
+.btn.orange-btn:hover {
+    background-color: white;
+    color: orange;
+}
+
+/* Fixed Bottom-Right Image */
+.fixed-image {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px; /* Adjust size */
+    height: auto;
+    z-index: 1000;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.fixed-image:hover {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info img {
+        width: 80px;
+    }
+}
