@@ -166,7 +166,6 @@ nav {
 }
 
 .motivation-img img {
-    /* width: auto; */
     height: 400px;
 }
 
@@ -255,5 +254,20 @@ nav {
     .next {
         font-size: 18px;
         padding: 8px 12px;
+    }
+
+    .motivation-container {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .motivation-text {
+        width: 320px;
+        margin: 30px 30px;
+        font-size: medium;
+    }
+
+    .motivation-img img {
+        height: 200px;
     }
 }
