@@ -26,8 +26,9 @@ body {
 
 /* Branding Text */
 .branding_text {
+    margin-top: 8px;
     font-size: 12px;
-    text-align: center;
+    text-align: left;
     line-height: 1.4;
     max-width: 350px;
     font-weight: 800;
@@ -91,30 +92,30 @@ nav {
 
 .carousel-container {
     background-color: #c6f4d5;
-    height: 400px;
+    height: 350px;
 }
 
 .carousel {
     position: relative;
-    top: 10%;
-    width: 1200px;
-    height: 321px;
+    top: 7%;
+    width: 1300px;
+    height: 300px;
     overflow: hidden;
     background-color: #cdcdcd;
     margin: auto;
 }
 
 .carousel-item .slide-image {
-    width: 1200px;
-    height: 321px;
+    width: 1300px;
+    height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .carousel-item {
     position: absolute;
-    width: 120%;
-    height: 1100px;
+    width: 130%;
+    height: 1200px;
     border: none;
     top: 0;
     left: 100%;
@@ -146,9 +147,23 @@ nav {
 }
 
 .motivation-container {
-    background-color: #f76680;
+    background-image: linear-gradient(to bottom, #f76680, #fb8ec0);
     width: 100%;
-    height: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.motivation-text {
+    margin: 100px 70px;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+}
+
+.motivation-img img {
+    /* width: auto; */
+    height: 400px;
 }
 
 /* Responsive Design */
@@ -171,7 +186,8 @@ nav {
         margin: 5px 0;
     }
 
-    .carousel {
+    .carousel,
+    .carousel-item {
         width: 90%;
     }
 
