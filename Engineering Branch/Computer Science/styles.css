@@ -298,7 +298,7 @@ nav {
     }
 
     .nav-links {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -307,13 +307,13 @@ nav {
     }
 
     .footer-container {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
         align-items: center;
     }
 
     .footer-bottom {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .social-icons {

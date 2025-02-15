@@ -67,14 +67,38 @@ button:hover {
 /* Navigation Bar */
 nav {
     background-color: #d91656;
-    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
+/* Style for the 3-dot menu button */
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: none;
+}
+
+.menu-toggle div {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 4px 0;
+}
+
+/* Navigation links */
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
 }
 
 .nav-links li {
@@ -94,6 +118,40 @@ nav {
     background: rgba(255, 255, 255, 0.2);
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        top: -120px;
+        right: 0;
+        color: black;
+        z-index: 1;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: -120px;
+        right: 0;
+        width: 200px;
+        background: #d91656;
+        padding: 10px 0;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+
+/* Carousel */
 .carousel-container {
     background-color: #c6f4d5;
     height: 350px;
@@ -134,22 +192,7 @@ nav {
     height: 100%;
 }
 
-.red {
-    background-color: red;
-}
-
-.green {
-    background-color: green;
-}
-
-.yellow {
-    background-color: yellow;
-}
-
-.violet {
-    background-color: violet;
-}
-
+/* Motivation Section */
 .motivation-container {
     background-image: linear-gradient(to bottom, #f76680, #fb8ec0);
     width: 100%;
@@ -169,6 +212,7 @@ nav {
     height: 400px;
 }
 
+/* Branch Section */
 .branch-container {
     display: flex;
     flex-wrap: wrap;
@@ -177,15 +221,7 @@ nav {
     margin-top: 100px;
 }
 
-.branch-container .ece,
-.branch-container .cse,
-.branch-container .electrical,
-.branch-container .mechanical,
-.branch-container .chemical,
-.branch-container .civil,
-.branch-container .chemicasci,
-.branch-container .physicalsci,
-.branch-container .biotech {
+.branch-container div {
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -194,15 +230,7 @@ nav {
     margin-bottom: 40px;
 }
 
-.branch-container .ece img,
-.branch-container .cse img,
-.branch-container .electrical img,
-.branch-container .mechanical img,
-.branch-container .chemical img,
-.branch-container .civil img,
-.branch-container .chemicasci img,
-.branch-container .physicalsci img,
-.branch-container .biotech img {
+.branch-container img {
     width: 300px;
     height: 200px;
     margin-top: 30px;
@@ -211,21 +239,13 @@ nav {
     border-radius: 10%;
 }
 
-.branch-container .ece p,
-.branch-container .cse p,
-.branch-container .electrical p,
-.branch-container .mechanical p,
-.branch-container .chemical p,
-.branch-container .civil p,
-.branch-container .chemicasci p,
-.branch-container .physicalsci p,
-.branch-container .biotech p {
+.branch-container p {
     width: 300px;
     text-align: center;
     margin: 30px 30px;
 }
 
-/* Responsive Design */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .branding {
         flex-direction: column;
@@ -234,15 +254,6 @@ nav {
 
     .search-login {
         margin-top: 10px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links li {
-        margin: 5px 0;
     }
 
     .carousel,
