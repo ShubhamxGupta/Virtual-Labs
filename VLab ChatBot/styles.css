@@ -1,4 +1,4 @@
-/* Circular Chatbot Icon */
+
 .chatbot-container {
   position: fixed;
   bottom: 20px;
@@ -11,7 +11,7 @@
   transition: all 0.3s ease;
 }
 
-/* Chatbot Icon Styling */
+
 .chat-header {
   width: 100%;
   height: 100%;
@@ -29,11 +29,11 @@
   border-radius: 50%;
 }
 
-/* Chat Window (Hidden Initially) */
+
 .chat-body {
   display: none;
   position: fixed;
-  bottom: 90px; /* Positioned above chatbot */
+  bottom: 90px; 
   right: 20px;
   width: 300px;
   height: 400px;
@@ -44,7 +44,7 @@
   flex-direction: column;
 }
 
-/* Chat Box */
+
 .chat-box {
   height: 340px;
   overflow-y: auto;
@@ -53,7 +53,7 @@
   flex-direction: column;
 }
 
-/* User Messages (Right) */
+
 .message.user {
   align-self: flex-end;
   background-color: #007BFF;
@@ -64,7 +64,7 @@
   max-width: 70%;
 }
 
-/* Bot Messages (Left) */
+
 .message.bot {
   align-self: flex-start;
   background-color: #E5E5E5;
@@ -75,7 +75,7 @@
   max-width: 70%;
 }
 
-/* Input Section */
+
 .input-container {
   display: flex;
   border-top: 1px solid #ddd;

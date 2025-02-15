@@ -1,15 +1,17 @@
 function toggleChat() {
   const chatBody = document.getElementById("chat-body");
-
-  // Toggle chat window visibility
+  // Toggle visibility
   chatBody.style.display = chatBody.style.display === "block" ? "none" : "block";
 }
 
-document.getElementById("send-btn").addEventListener("click", function() {
+// Handle Send button
+document.getElementById("send-btn").addEventListener("click", function(event) {
+  // Prevent form submission if the button is in a form
+  event.preventDefault();
   sendMessage();
 });
 
-// Handle Enter Key for Sending Messages
+// Handle Enter key
 document.getElementById("user-input").addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
     event.preventDefault();
@@ -22,26 +24,34 @@ function sendMessage() {
   const message = userInput.value.trim();
   if (!message) return;
 
+  // Show user's message immediately
   appendMessage("user", message);
   userInput.value = "";
 
-  // Show typing indicator
+  // Show a "typing..." indicator
   appendTypingIndicator();
 
+  // Optional 1-second delay to mimic "thinking" or "typing"
   setTimeout(() => {
-    fetch("/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message })
+    fetch("http://localhost:3000/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message })
     })
-    .then(response => response.json())
+    .then(response => {
+      // Throw an error if the server returned a non-OK status
+      if (!response.ok) {
+        throw new Error(`Server error: ${response.status}`);
+      }
+      return response.json();
+    })
     .then(data => {
-        removeTypingIndicator();
-        appendMessage("bot", data.response);
+      removeTypingIndicator();
+      appendMessage("bot", data.response);
     })
-    .catch(() => {
-        removeTypingIndicator();
-        appendMessage("bot", "Error communicating with chatbot.");
+    .catch((error) => {
+      removeTypingIndicator();
+      appendMessage("bot", `Error communicating with chatbot: ${error.message}`);
     });
   }, 1000);
 }
@@ -52,10 +62,10 @@ function appendMessage(sender, text) {
   messageDiv.classList.add("message", sender);
   messageDiv.textContent = text;
   chatBox.appendChild(messageDiv);
-  chatBox.scrollTop = chatBox.scrollHeight;
+  chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll
 }
 
-// Typing Indicator Functionality
+// Show "Typing..." message
 function appendTypingIndicator() {
   const chatBox = document.getElementById("chat-box");
   const typingDiv = document.createElement("div");
@@ -66,6 +76,7 @@ function appendTypingIndicator() {
   chatBox.scrollTop = chatBox.scrollHeight;
 }
 
+// Remove "Typing..." message
 function removeTypingIndicator() {
   const typingDiv = document.getElementById("typing-indicator");
   if (typingDiv) typingDiv.remove();

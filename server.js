@@ -2,35 +2,32 @@
 
 require('dotenv').config();
 const express = require('express');
+const cors = require("cors");
 const path = require('path');
 
-// Import Google Generative AI SDK
-const { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } = require('@google/generative-ai');
+const { GoogleGenerativeAI } = require('@google/generative-ai');
+// If needed: const { HarmCategory, HarmBlockThreshold } = require('@google/generative-ai');
 
-// Initialize the API with your key
-const apiKey = 'AIzaSyAFG2Xmb5bQkZdaNK7M3t1ttEZex9-8QNU';
+const apiKey = process.env.GEMINI_API_KEY || 'AIzaSy...YourKey';
 const genAI = new GoogleGenerativeAI(apiKey);
 
-// Get the generative model instance
 const model = genAI.getGenerativeModel({
-  model: "gemini-2.0-flash-thinking-exp-01-21",
+  model: 'gemini-2.0-flash-thinking-exp-01-21',
 });
 
-// Define generation config for responses
 const generationConfig = {
   temperature: 0.7,
   topP: 0.95,
   topK: 64,
   maxOutputTokens: 65536,
-  responseMimeType: "text/plain",
+  responseMimeType: 'text/plain',
 };
 
-// Start a chat session with an initial history (load your knowledge base here)
 const chatSession = model.startChat({
   generationConfig,
   history: [
     {
-      role: "user",
+      role: 'user',
       parts: [
         {
           text: `{
@@ -161,40 +158,41 @@ const chatSession = model.startChat({
       ],
     },
     {
-      role: "model",
-      parts: [{ text: "Knowledge base loaded successfully." }],
+      role: 'model',
+      parts: [{ text: 'Knowledge base loaded successfully.' }],
     }
   ],
 });
 
 const app = express();
 const port = process.env.PORT || 3000;
+app.use(cors()); 
 
-// Use built-in JSON middleware
 app.use(express.json());
-// Serve static files from the "public" folder (where your frontend resides)
-app.use(express.static(path.join(__dirname, 'public')));
 
-// Chat endpoint
-app.post("/chat", async (req, res) => {
+// 1) Serve the entire project root as static.
+//    This means ANY file in <project-root> is accessible via absolute paths.
+app.use(express.static(path.join(__dirname)));
+
+// 2) Chat endpoint
+app.post('/chat', async (req, res) => {
   try {
     const { message } = req.body;
     if (!message) {
-      return res.status(400).json({ error: "Message is required." });
+      return res.status(400).json({ error: 'Message is required.' });
     }
 
-    // Send the user's message to the chat session and await a response
     const result = await chatSession.sendMessage(message);
+    // const responseText = result.response.text();
     const responseText = result.response.text();
-
     res.json({ response: responseText });
   } catch (error) {
-    console.error("Error processing message:", error);
-    res.status(500).json({ error: "Error processing message." });
+    console.error('Error processing message:', error);
+    res.status(500).json({ error: 'Error processing message' });
   }
 });
 
-// Start the server
+// 3) Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
