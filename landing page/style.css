@@ -253,15 +253,23 @@ marquee img {
 }
 
 .institutions-logo {
-    position: absolute;
-    left: 5%;
+    margin-left: 5%;
     width: 90%;
-    height: 200px;
-    align-self: center;
+    height: 250px;
+    background-color: white;
 }
 
 .institutions-logo h3 {
     text-align: center;
+}
+
+.Announcements-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Testimonial {
+    display: flex;
 }
 
 /* Responsive Adjustments */
