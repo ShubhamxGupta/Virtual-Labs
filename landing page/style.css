@@ -7,6 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #fbfbfb;
 }
 
 a {
@@ -69,22 +70,19 @@ nav {
     background-color: #d91656;
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     position: relative;
 }
 
 /* Style for the 3-dot menu button */
 .menu-toggle {
+    display: none;
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
     color: white;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    display: none;
 }
 
 .menu-toggle div {
@@ -122,18 +120,19 @@ nav {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
-        top: -120px;
+        top: 0;
         right: 0;
         color: black;
         z-index: 2;
     }
 
+    .nav {
+        justify-content: center;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: -120px;
-        right: 0;
         width: 200px;
         background: #d91656;
         padding: 10px 0;
@@ -206,6 +205,8 @@ nav {
     font-size: xx-large;
     justify-content: center;
     align-items: center;
+    color: white;
+    -webkit-text-stroke: 0.3px black;
 }
 
 .motivation-img img {
@@ -228,6 +229,7 @@ nav {
     border: 1px solid black;
     border-radius: 10%;
     margin-bottom: 40px;
+    background-color: #e8f9ff;
 }
 
 .branch-container img {
@@ -243,6 +245,23 @@ nav {
     width: 300px;
     text-align: center;
     margin: 30px 30px;
+}
+
+marquee img {
+    height: 190px;
+    margin: 10px 10px;
+}
+
+.institutions-logo {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    height: 200px;
+    align-self: center;
+}
+
+.institutions-logo h3 {
+    text-align: center;
 }
 
 /* Responsive Adjustments */
