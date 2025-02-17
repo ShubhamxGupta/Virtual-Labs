@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #fbfbfb;
+    background-color: #f8f8f8;
 }
 
 a {
@@ -266,10 +266,60 @@ marquee img {
 .Announcements-section {
     display: flex;
     justify-content: space-evenly;
+    margin: 30px 30px;
+}
+
+.Announcements {
+    background-color: white;
+    width: 550px;
+}
+
+.Announcements h3 {
+    font-size: x-large;
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px 10px;
+}
+
+.Announcements h6 {
+    text-align: left;
+    font-size: medium;
+    padding: 20px 20px;
 }
 
 .Testimonial {
     display: flex;
+}
+
+.Testimonial div {
+    background-color: white;
+    margin: 20px 20px;
+}
+
+.Testimonial h5 {
+    text-align: left;
+    font-size: small;
+    padding: 10px 10px;
+    font-family: cursive;
+    margin: 10px 10px;
+}
+
+.Testimonial h6 {
+    text-align: right;
+    font-size: small;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+
+.Testimonial-container {
+    justify-content: space-evenly;
+    margin: 30px 30px;
+}
+
+.Testimonial-container h3 {
+    text-align: center;
+    font-size: x-large;
+    text-decoration: underline;
 }
 
 /* Responsive Adjustments */
