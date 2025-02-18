@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virtual Labs Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="branding">
+        <div class="logo">
+            <img src="../Engineering Branch/Computer Science/logo.png" alt="Virtual Labs Logo" />
+        </div>
+        <div class="branding_text">
+            <p>A initiative of</p>
+            <p style="color: red">Ministry of Education</p>
+            <p>Under the National Mission on Education through ICT</p>
+        </div>
+        <div class="search-login">
+            <input
+                type="search"
+                name="header_search"
+                id="header_search"
+                placeholder="Search Lab"
+            />
+            <button type="button">Login / Sign Up</button>
+        </div>
+    </div>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Outreach Portal</a></li>
+            <li><a href="#">Participating Institutes</a></li>
+            <li><a href="#">NMEICT</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <header class="header">
+    <h1>Virtual Labs Dashboard</h1>
+    <div class="user-info">Welcome, <span id="user-name">Student</span>!</div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><span href="#">Dashboard</span></li>
+          <li><span href="#">Courses</span></li>
+          <li><span href="#">Progress</span></li>
+          <li><span href="#">Recommendations</span></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section id="progress-tracker" class="card">
+        <h2>Your Progress</h2>
+        <div class="chart-container">
+          <div class="chart-box">
+            <div class="chart-header">
+              <h2>Experiments Completed</h2>
+              <button class="share">Share</button>
+            </div>
+            <div class="chart-canvas chart-bar">
+              <canvas id="experimentsChart"></canvas>
+            </div>
+            <div class="chart-footer">
+              <span>Total Completed: <strong>80</strong></span><br />
+              <span>Year Avg: <strong>64</strong></span>
+            </div>
+          </div>
+
+          <!-- Lab Usage Doughnut Chart -->
+          <div class="chart-box doughnut-chart">
+            <div class="chart-header">
+              <h2>Lab Usage</h2>
+              <button class="share">Share</button>
+            </div>
+            <div class="chart-canvas">
+              <canvas id="labUsageChart"></canvas>
+            </div>
+            <div class="chart-footer">
+              <span>Mechanical: <strong>30%</strong></span> &nbsp;|&nbsp;
+              <span>Electrical: <strong>40%</strong></span> &nbsp;|&nbsp;
+              <span>Others: <strong>30%</strong></span>
+            </div>
+          </div>
+
+          <div class="chart-box active-time-chart">
+            <div class="chart-header">
+              <h2>Active Time Progress</h2>
+              <button class="share">Share</button>
+            </div>
+            <div class="chart-canvas active-time">
+              <canvas id="activeTimeChart"></canvas>
+            </div>
+            <div class="chart-footer">
+              <span>Daily: <strong>3 hrs</strong></span> &nbsp;|&nbsp;
+              <span>Weekly: <strong>20 hrs</strong></span> &nbsp;|&nbsp;
+              <span>Monthly: <strong>80 hrs</strong></span>
+            </div>
+          </div>
+      </section>
+
+      <section id="recommendations" class="card">
+        <h2>Recommended Courses</h2>
+        <ul id="course-list">
+          <!-- Recommended Courses -->
+        </ul>
+      </section>
+
+      <section id="activitySection" class="activity-card">
+        <h2>Recent Activity</h2>
+        <ul id="activityList">
+          <!-- Recent activity -->
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h6>About VLAB</h6>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="footer-section">
+        <h6>Quick Links</h6>
+        <a href="#">Lab Feedback Form</a>
+        <a href="#">Lab Assessment Form</a>
+        <a href="#">FAQ</a>
+        <a href="#">Shakshat Portal</a>
+      </div>
+      <div class="footer-section">
+        <h6>CONTACT</h6>
+        <p>Wireless Research Lab
+          Room No - 206/IIA
+          Bharti School of Telecom
+          Indian Institute of Technology Delhi
+          Hauz Khas, New Delhi-110016</p>
+        <p>Email: support@vlab.co.in</p>
+        <p>Phone: 011-26582050</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    // Experiments Completed (Bar Chart)
+    const experimentsCtx = document.getElementById('experimentsChart').getContext('2d');
+    const experimentsChart = new Chart(experimentsCtx, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Computer Science',
+          'Civil Engineering',
+          'Mechanical Engineering',
+          'Electrical Engineering',
+          'Physical Sciences',
+          'Chemical Sciences',
+          'Electronics & Communications'
+        ],
+        datasets: [{
+            label: 'Experiments',
+            data: [65, 75, 50, 90, 80, 70, 85],
+            backgroundColor: 'rgba(0, 123, 255, 0.5)',
+            borderColor: 'rgba(0, 123, 255, 1)',
+            borderWidth: 1
+          },
+          {
+            label: 'Year Avg',
+            data: [64, 64, 64, 64, 64, 64, 64],
+            type: 'line',
+            borderColor: '#FFB200',
+            borderWidth: 2,
+            fill: false,
+            pointRadius: 0,
+            tension: 0.4
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100
+          },
+          x: {
+            ticks: {
+              maxRotation: 45,
+              minRotation: 45,
+              autoSkip: false,
+              font: {
+                size: 10
+              },
+              callback: function (value, index, ticks) {
+                const label = this.getLabelForValue(value);
+                return label.split(' ').join('\n');
+              }
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+      }
+    });
+
+
+    // Lab Usage (Doughnut Chart)
+    const labUsageCtx = document.getElementById('labUsageChart').getContext('2d');
+    const labUsageChart = new Chart(labUsageCtx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Mechanical', 'Electrical', 'Others'],
+        datasets: [{
+          label: 'Lab Usage',
+          data: [30, 40, 30],
+          backgroundColor: ['#007BFF', '#FFB200', '#666666'],
+          hoverOffset: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        cutout: '70%',
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+      }
+    });
+
+    // Get the canvas element and its context
+    const ctx = document.getElementById('activeTimeChart').getContext('2d');
+
+    // Create the line chart using Chart.js
+    const activeTimeChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Daily', 'Weekly', 'Monthly'],
+        datasets: [{
+          label: 'Active Time (hours)',
+          data: [3, 20, 80], // Example data: adjust as needed
+          fill: false,
+          borderColor: 'rgba(75, 192, 192, 1)',
+          backgroundColor: 'rgba(75, 192, 192, 0.5)',
+          tension: 0.4,
+          pointRadius: 5,
+          pointBackgroundColor: 'rgba(75, 192, 192, 1)',
+          pointBorderColor: '#fff'
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              stepSize: 10
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
