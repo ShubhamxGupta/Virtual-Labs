@@ -1,73 +1,73 @@
 const topics = [
     { 
-        name: "Transportation Engineering Lab", 
-        description: "Hands-on experiments in AI, covering basic algorithms and models.",
-        college: "NITK Surathkal"
+        name: "परिवहन इंजीनियरिंग लैब", 
+        description: "बुनियादी एल्गोरिदम और मॉडल को कवर करते हुए एआई में व्यावहारिक प्रयोग।",
+        college: "एनआईटीके सूरथकल"
     },
     { 
-        name: "Concrete Structures Lab", 
-        description: "Advanced AI experiments, including deep learning and reinforcement learning.",
-        college: "IIT Delhi"
+        name: "कंक्रीट स्ट्रक्चर लैब", 
+        description: "गहन शिक्षण और सुदृढीकरण शिक्षण सहित उन्नत एआई प्रयोग।",
+        college: "आईआईटी दिल्ली"
     },
     { 
-        name: "Engineering Geology Lab", 
-        description: "Study of artificial neurons, backpropagation, and neural network architectures.",
-        college: "COEP Technological University Pune"
+        name: "इंजीनियरिंग भूविज्ञान प्रयोगशाला", 
+        description: "कृत्रिम न्यूरॉन्स, बैकप्रॉपैगेशन और तंत्रिका नेटवर्क आर्किटेक्चर का अध्ययन।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
     },
     { 
-        name: "Environmental Engineering Lab - I", 
-        description: "Exploring NLP techniques, language modeling, and syntactic parsing.",
-        college: "NITK Surathkal"
+        name: "पर्यावरण इंजीनियरिंग लैब - I", 
+        description: "एनएलपी तकनीकों, भाषा मॉडलिंग और वाक्यविन्यास पार्सिंग की खोज।",
+        college: "एनआईटीके सूरथकल"
     },
     { 
-        name: "Environmental Engineering Lab - II", 
-        description: "Experiments on processor design, memory hierarchy, and instruction execution.",
-        college: "NITK Surathkal"
+        name: "पर्यावरण इंजीनियरिंग लैब - II", 
+        description: "प्रोसेसर डिज़ाइन, मेमोरी पदानुक्रम और निर्देश निष्पादन पर प्रयोग।",
+        college: "एनआईटीके सूरथकल"
     },
     { 
-        name: "Fluid Machinery Lab", 
-        description: "Practical exercises on digital logic, microprocessors, and hardware components.",
-        college: "NITK Surathkal"
+        name: "द्रव मशीनरी लैब", 
+        description: "डिजिटल लॉजिक, माइक्रोप्रोसेसर और हार्डवेयर घटकों पर व्यावहारिक अभ्यास।",
+        college: "एनआईटीके सूरथकल"
     },
     { 
-        name: "Fluid Mechanics Lab", 
-        description: "Programming exercises to build problem-solving and algorithmic skills.",
-        college: "NITK Surathkal"
+        name: "द्रव यांत्रिकी प्रयोगशाला", 
+        description: "समस्या-समाधान और एल्गोरिथम कौशल विकसित करने के लिए प्रोग्रामिंग अभ्यास।",
+        college: "एनआईटीके सूरथकल"
     },
     { 
-        name: "Geotechnical Engineering Lab", 
-        description: "Implementation of encryption, decryption, and secure communication protocols.",
-        college: "NITK Surathkal"
+        name: "जियोटेक्निकल इंजीनियरिंग लैब", 
+        description: "एन्क्रिप्शन, डिक्रिप्शन और सुरक्षित संचार प्रोटोकॉल का कार्यान्वयन।",
+        college: "एनआईटीके सूरथकल"
     },
     { 
-        name: "Hydraulics and Fluid Mechanics Lab", 
-        description: "Implementation of fundamental data structures like arrays, stacks, and queues.",
-        college: "IIT Hyderabad"
+        name: "हाइड्रोलिक्स और द्रव यांत्रिकी प्रयोगशाला", 
+        description: "सरणियों, ढेरों और कतारों जैसी मूलभूत डेटा संरचनाओं का कार्यान्वयन।",
+        college: "आईआईटी हैदराबाद"
     },
     { 
-        name: "Maine Structure Lab", 
-        description: "Advanced data structures such as trees, graphs, and hash tables.",
-        college: "NITK Surathkal"
+        name: "मेन स्ट्रक्चर लैब", 
+        description: "उन्नत डेटा संरचनाएँ जैसे पेड़, ग्राफ़ और हैश टेबल।",
+        college: "एनआईटीके सूरथकल"
     },
     { 
-        name: "Mining Geology Lab", 
-        description: "Comprehensive exercises covering basic and advanced data structures.",
-        college: "NITK Surathkal"
+        name: "खनन भूविज्ञान प्रयोगशाला", 
+        description: "बुनियादी और उन्नत डेटा संरचनाओं को कवर करने वाले व्यापक अभ्यास।",
+        college: "एनआईटीके सूरथकल"
     },
     { 
-        name: "Smart Structures and Dynamics Lab", 
-        description: "Experiments on image filtering, edge detection, and pattern recognition.",
-        college: "IIT Delhi"
+        name: "स्मार्ट स्ट्रक्चर्स और डायनेमिक्स लैब", 
+        description: "छवि फ़िल्टरिंग, किनारे का पता लगाना और पैटर्न पहचान पर प्रयोग।",
+        college: "आईआईटी दिल्ली"
     },
     { 
-        name: "Soil Mechanics Lab", 
-        description: "Hands-on NLP techniques including tokenization, sentiment analysis, and text generation.",
-        college: "IIT Hyderabad"
+        name: "मृदा यांत्रिकी प्रयोगशाला", 
+        description: "टोकनाइजेशन, भावना विश्लेषण और पाठ निर्माण सहित व्यावहारिक एनएलपी तकनीकें।",
+        college: "आईआईटी हैदराबाद"
     },
     { 
-        name: "Strength of Materials Lab", 
-        description: "Exercises covering Python programming, data handling, and scripting.",
-        college: "NITK Surathkal"
+        name: "सामग्री प्रयोगशाला की ताकत", 
+        description: "पायथन प्रोग्रामिंग, डेटा हैंडलिंग और स्क्रिप्टिंग को कवर करने वाले अभ्यास।",
+        college: "एनआईटीके सूरथकल"
     }
 ];
 
@@ -81,10 +81,10 @@ topics.forEach(topic => {
     card.innerHTML = `
         <h2>${topic.name}</h2>
         <p>${topic.description}</p>
-        <p class="college"><strong>College:</strong> ${topic.college}</p>
+        <p class="college"><strong>कॉलेज:</strong> ${topic.college}</p>
         <div class="buttons">
-            <button class="btn white-btn">Reference Books</button>
-            <button class="btn orange-btn">Syllabus Mapping</button>
+            <button class="btn white-btn">धार्मिक आस्था</button>
+            <button class="btn orange-btn">सिलेबस मैपिंग</button>
         </div>
     `;
 

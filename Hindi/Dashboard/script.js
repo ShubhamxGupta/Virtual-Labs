@@ -1,20 +1,20 @@
 // Sample recommended courses based on usage
 const recommendedCourses = [
     {
-        title: "Introduction to Virtual Labs",
-        description: "Get started with Virtual Labs and learn how to navigate and utilize the platform effectively."
+        title: "वर्चुअल लैब्स का परिचय",
+        description: "वर्चुअल लैब्स के साथ शुरुआत करें और सीखें कि प्लेटफ़ॉर्म को प्रभावी ढंग से कैसे नेविगेट और उपयोग किया जाए।"
     },
     {
-        title: "Advanced Experiment Techniques",
-        description: "Enhance your skills by learning advanced techniques and best practices for conducting experiments."
+        title: "उन्नत प्रयोग तकनीकें",
+        description: "प्रयोगों के संचालन के लिए उन्नत तकनीकों और सर्वोत्तम प्रथाओं को सीखकर अपने कौशल को बढ़ाएं।"
     },
     {
-        title: "Data Analysis for Engineers",
-        description: "Learn how to collect, process, and analyze data from experiments to draw meaningful conclusions."
+        title: "इंजीनियरों के लिए डेटा विश्लेषण",
+        description: "सार्थक निष्कर्ष निकालने के लिए प्रयोगों से डेटा एकत्र करना, संसाधित करना और विश्लेषण करना सीखें।"
     },
     {
-        title: "Simulation & Modeling",
-        description: "Dive into simulation tools and modeling techniques used in modern engineering experiments."
+        title: "सिमुलेशन और मॉडलिंग",
+        description: "आधुनिक इंजीनियरिंग प्रयोगों में उपयोग किए जाने वाले सिमुलेशन टूल और मॉडलिंग तकनीकों के बारे में जानें।"
     }
 ];
 
@@ -36,24 +36,24 @@ document.addEventListener("DOMContentLoaded", displayRecommendedCourses);
 
 const recentActivity = [
     {
-      title: "Physics Experiment: Mechanics",
+      title: "भौतिकी प्रयोग: यांत्रिकी",
       date: "2025-02-01",
-      description: "Studied forces, motion, and energy conservation through simulations."
+      description: "सिमुलेशन के माध्यम से बलों, गति और ऊर्जा संरक्षण का अध्ययन किया।"
     },
     {
-      title: "Chemistry Experiment: Reaction Rates",
+      title: "रसायन विज्ञान प्रयोग: प्रतिक्रिया दरें",
       date: "2025-02-02",
-      description: "Analyzed the impact of temperature on reaction speeds."
+      description: "प्रतिक्रिया गति पर तापमान के प्रभाव का विश्लेषण किया।"
     },
     {
-      title: "Civil Engineering Lab: Structural Analysis",
+      title: "सिविल इंजीनियरिंग लैब: संरचनात्मक विश्लेषण",
       date: "2025-02-03",
-      description: "Tested load-bearing capacities using virtual models."
+      description: "आभासी मॉडल का उपयोग करके भार वहन क्षमता का परीक्षण किया गया।"
     },
     {
-      title: "Computer Science Experiment: Data Structures",
+      title: "कंप्यूटर विज्ञान प्रयोग: डेटा संरचनाएँ",
       date: "2025-02-04",
-      description: "Explored algorithm efficiency and sorting techniques."
+      description: "एल्गोरिदम दक्षता और सॉर्टिंग तकनीकों का पता लगाया।"
     }
   ];
   
@@ -63,7 +63,7 @@ const recentActivity = [
       const li = document.createElement("li");
       li.innerHTML = `
         <h3>${item.title}</h3>
-        <p><strong>Date:</strong> ${item.date}</p>
+        <p><strong>तारीख:</strong> ${item.date}</p>
         <p>${item.description}</p>
       `;
       list.appendChild(li);

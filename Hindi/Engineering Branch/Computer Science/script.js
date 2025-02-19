@@ -2,74 +2,74 @@
 
 const topics = [
     { 
-        name: "Artificial Intelligence I Lab", 
-        description: "Hands-on experiments in AI, covering basic algorithms and models.",
-        college: "IIIT Hyderabad"
+        name: "आर्टिफिशियल इंटेलिजेंस आई लैब", 
+        description: "बुनियादी एल्गोरिदम और मॉडल को कवर करते हुए एआई में व्यावहारिक प्रयोग।",
+        college: "आईआईआईटी हैदराबाद"
     },
     { 
-        name: "Artificial Intelligence II Lab", 
-        description: "Advanced AI experiments, including deep learning and reinforcement learning.",
-        college: "IIIT Hyderabad"
+        name: "आर्टिफिशियल इंटेलिजेंस II लैब", 
+        description: "गहन शिक्षण और सुदृढीकरण शिक्षण सहित उन्नत एआई प्रयोग।",
+        college: "आईआईआईटी हैदराबाद"
     },
     { 
-        name: "Artificial Neural Networks", 
-        description: "Study of artificial neurons, backpropagation, and neural network architectures.",
-        college: "IIIT Hyderabad"
+        name: "कृत्रिम तंत्रिका नेटवर्क", 
+        description: "कृत्रिम न्यूरॉन्स, बैकप्रॉपैगेशन और तंत्रिका नेटवर्क आर्किटेक्चर का अध्ययन।",
+        college: "आईआईआईटी हैदराबाद"
     },
     { 
-        name: "Computational Linguistics Lab", 
-        description: "Exploring NLP techniques, language modeling, and syntactic parsing.",
-        college: "IIIT Hyderabad"
+        name: "कम्प्यूटेशनल भाषाविज्ञान प्रयोगशाला", 
+        description: "एनएलपी तकनीकों, भाषा मॉडलिंग और वाक्यविन्यास पार्सिंग की खोज।",
+        college: "आईआईआईटी हैदराबाद"
     },
     { 
-        name: "Computer Organization and Architecture Lab", 
-        description: "Experiments on processor design, memory hierarchy, and instruction execution.",
-        college: "IIIT Hyderabad"
+        name: "कंप्यूटर संगठन और वास्तुकला प्रयोगशाला", 
+        description: "प्रोसेसर डिज़ाइन, मेमोरी पदानुक्रम और निर्देश निष्पादन पर प्रयोग।",
+        college: "आईआईआईटी हैदराबाद"
     },
     { 
-        name: "Computer Organization Lab", 
-        description: "Practical exercises on digital logic, microprocessors, and hardware components.",
-        college: "IIIT Hyderabad"
+        name: "कंप्यूटर संगठन लैब", 
+        description: "डिजिटल लॉजिक, माइक्रोप्रोसेसर और हार्डवेयर घटकों पर व्यावहारिक अभ्यास।",
+        college: "आईआईआईटी हैदराबाद"
     },
     { 
-        name: "Computer Programming Lab", 
-        description: "Programming exercises to build problem-solving and algorithmic skills.",
-        college: "VIT Chennai"
+        name: "कंप्यूटर प्रोग्रामिंग लैब", 
+        description: "समस्या-समाधान और एल्गोरिथम कौशल विकसित करने के लिए प्रोग्रामिंग अभ्यास।",
+        college: "वीआईटी चेन्नई"
     },
     { 
-        name: "Cryptography Lab", 
-        description: "Implementation of encryption, decryption, and secure communication protocols.",
-        college: "IIIT Hyderabad"
+        name: "क्रिप्टोग्राफी लैब", 
+        description: "एन्क्रिप्शन, डिक्रिप्शन और सुरक्षित संचार प्रोटोकॉल का कार्यान्वयन।",
+        college: "आईआईआईटी हैदराबाद"
     },
     { 
-        name: "Data Structures - I Lab", 
-        description: "Implementation of fundamental data structures like arrays, stacks, and queues.",
-        college: "IIIT Hyderabad"
+        name: "डेटा संरचनाएँ - I लैब", 
+        description: "सरणियों, ढेरों और कतारों जैसी मूलभूत डेटा संरचनाओं का कार्यान्वयन।",
+        college: "आईआईआईटी हैदराबाद"
     },
     { 
-        name: "Data Structures - II Lab", 
-        description: "Advanced data structures such as trees, graphs, and hash tables.",
-        college: "IIIT Hyderabad"
+        name: "डेटा संरचनाएँ - II लैब", 
+        description: "उन्नत डेटा संरचनाएँ जैसे पेड़, ग्राफ़ और हैश टेबल।",
+        college: "आईआईआईटी हैदराबाद"
     },
     { 
-        name: "Data Structures Lab", 
-        description: "Comprehensive exercises covering basic and advanced data structures.",
-        college: "IIIT Hyderabad"
+        name: "डेटा स्ट्रक्चर्स लैब", 
+        description: "बुनियादी और उन्नत डेटा संरचनाओं को कवर करने वाले व्यापक अभ्यास।",
+        college: "आईआईआईटी हैदराबाद"
     },
     { 
-        name: "Image Processing Lab", 
-        description: "Experiments on image filtering, edge detection, and pattern recognition.",
-        college: "IIIT Hyderabad"
+        name: "इमेज प्रोसेसिंग लैब", 
+        description: "छवि फ़िल्टरिंग, किनारे का पता लगाना और पैटर्न पहचान पर प्रयोग।",
+        college: "आईआईआईटी हैदराबाद"
     },
     { 
-        name: "Natural Language Processing Lab", 
-        description: "Hands-on NLP techniques including tokenization, sentiment analysis, and text generation.",
-        college: "IIIT Hyderabad"
+        name: "प्राकृतिक भाषा प्रसंस्करण प्रयोगशाला", 
+        description: "टोकनाइजेशन, भावना विश्लेषण और पाठ निर्माण सहित व्यावहारिक एनएलपी तकनीकें।",
+        college: "आईआईआईटी हैदराबाद"
     },
     { 
-        name: "Python Programming Lab", 
-        description: "Exercises covering Python programming, data handling, and scripting.",
-        college: "IIIT Hyderabad"
+        name: "पायथन प्रोग्रामिंग लैब", 
+        description: "पायथन प्रोग्रामिंग, डेटा हैंडलिंग और स्क्रिप्टिंग को कवर करने वाले अभ्यास।",
+        college: "आईआईआईटी हैदराबाद"
     }
 ];
 
@@ -83,10 +83,10 @@ topics.forEach(topic => {
     card.innerHTML = `
         <h2>${topic.name}</h2>
         <p>${topic.description}</p>
-        <p class="college"><strong>College:</strong> ${topic.college}</p>
+        <p class="college"><strong>कॉलेज:</strong> ${topic.college}</p>
         <div class="buttons">
-            <button class="btn white-btn">Reference Books</button>
-            <button class="btn orange-btn">Syllabus Mapping</button>
+            <button class="btn white-btn">धार्मिक आस्था</button>
+            <button class="btn orange-btn">सिलेबस मैपिंग</button>
         </div>
     `;
 
