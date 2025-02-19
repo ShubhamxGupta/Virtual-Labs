@@ -2,139 +2,139 @@
 
 const topics = [
   {
-    name: "Bio-Medical Signal & Image Processing Lab",
-    description: "Processing and analysis of biomedical signals and images.",
-    college: "IIT ROORKEE"
+    name: "बायो-मेडिकल सिग्नल एवं इमेज प्रोसेसिंग लैब",
+    description: "बायोमेडिकल संकेतों और छवियों का प्रसंस्करण और विश्लेषण।",
+    college: "आईआईटी रूड़की"
   },
   {
-    name: "Biochemistry Virtual Lab I",
-    description: "Interactive virtual experiments and simulations in biochemistry.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "बायोकैमिस्ट्री वर्चुअल लैब I",
+    description: "जैव रसायन विज्ञान में इंटरैक्टिव आभासी प्रयोग और सिमुलेशन।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Bioinformatics and Computational Biology Virtual Lab (New)",
-    description: "Virtual lab experiments on bioinformatics and computational biology.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "जैव सूचना विज्ञान और कम्प्यूटेशनल जीवविज्ञान वर्चुअल लैब (नया)",
+    description: "जैव सूचना विज्ञान और कम्प्यूटेशनल जीव विज्ञान पर आभासी प्रयोगशाला प्रयोग।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Bioinformatics and Data Science in Biotechnology Lab",
-    description: "Bioinformatics and data science applications in biotechnology.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "जैव प्रौद्योगिकी प्रयोगशाला में जैव सूचना विज्ञान और डेटा विज्ञान",
+    description: "जैव प्रौद्योगिकी में जैव सूचना विज्ञान और डेटा विज्ञान अनुप्रयोग।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Bioinformatics Virtual Lab I",
-    description: "Introductory virtual lab exercises in bioinformatics.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "जैव सूचना विज्ञान वर्चुअल लैब I",
+    description: "जैव सूचना विज्ञान में परिचयात्मक आभासी प्रयोगशाला अभ्यास।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Bioinformatics Virtual Lab II",
-    description: "Advanced virtual lab experiments in bioinformatics.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "जैव सूचना विज्ञान वर्चुअल लैब II",
+    description: "जैव सूचना विज्ञान में उन्नत आभासी प्रयोगशाला प्रयोग।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Bioinformatics Virtual Lab III",
-    description: "Comprehensive virtual lab modules for bioinformatics learning.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "जैव सूचना विज्ञान वर्चुअल लैब III",
+    description: "जैव सूचना विज्ञान सीखने के लिए व्यापक वर्चुअल लैब मॉड्यूल।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Biological Image Processing Lab",
-    description: "Processing and analysis of biological images using computational techniques.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "जैविक छवि प्रसंस्करण प्रयोगशाला",
+    description: "कम्प्यूटेशनल तकनीकों का उपयोग करके जैविक छवियों का प्रसंस्करण और विश्लेषण।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Biomedical and Signal Processing Lab",
-    description: "Biomedical signal processing and analysis techniques.",
-    college: "COEP Technological University Pune"
+    name: "बायोमेडिकल और सिग्नल प्रोसेसिंग लैब",
+    description: "बायोमेडिकल सिग्नल प्रोसेसिंग और विश्लेषण तकनीक।",
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   },
   {
-    name: "Biomedical Instrumentation Lab",
-    description: "Experiments with biomedical instrumentation and measurement systems.",
-    college: "IIT ROORKEE"
+    name: "बायोमेडिकल इंस्ट्रुमेंटेशन लैब",
+    description: "बायोमेडिकल उपकरण और माप प्रणाली के साथ प्रयोग।",
+    college: "आईआईटी रूड़की"
   },
   {
-    name: "Bioreactor Modeling and Simulation Lab",
-    description: "Modeling and simulation of bioreactor systems and processes.",
-    college: "IIT DELHI"
+    name: "बायोरिएक्टर मॉडलिंग और सिमुलेशन लैब",
+    description: "बायोरिएक्टर प्रणालियों और प्रक्रियाओं की मॉडलिंग और सिमुलेशन।",
+    college: "आईआईटी दिल्ली"
   },
   {
-    name: "Biosensor Virtual Lab (New)",
-    description: "Virtual experiments and simulations related to biosensors.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "बायोसेंसर वर्चुअल लैब (नया)",
+    description: "बायोसेंसर से संबंधित आभासी प्रयोग और सिमुलेशन।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Biosignal Processing and Analysis Lab",
-    description: "Analysis and processing of biosignals for various applications.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "बायोसिग्नल प्रोसेसिंग और विश्लेषण लैब",
+    description: "विभिन्न अनुप्रयोगों के लिए बायोसिग्नल का विश्लेषण और प्रसंस्करण।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Cell Biology Virtual Lab I",
-    description: "Introductory virtual experiments and simulations in cell biology.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "सेल बायोलॉजी वर्चुअल लैब I",
+    description: "कोशिका जीव विज्ञान में परिचयात्मक आभासी प्रयोग और सिमुलेशन।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Cell Biology Virtual Lab II",
-    description: "Advanced virtual lab modules and experiments in cell biology.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "सेल बायोलॉजी वर्चुअल लैब II",
+    description: "कोशिका जीव विज्ञान में उन्नत वर्चुअल लैब मॉड्यूल और प्रयोग।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Computer-Aided Drug Design Virtual Lab",
-    description: "Virtual lab exercises in computer-aided drug design and discovery.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "कंप्यूटर-एडेड ड्रग डिज़ाइन वर्चुअल लैब",
+    description: "कंप्यूटर-सहायता प्राप्त दवा डिजाइन और खोज में वर्चुअल लैब अभ्यास।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Immunology Virtual Lab I",
-    description: "Basic concepts and virtual experiments in immunology.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "इम्यूनोलॉजी वर्चुअल लैब I",
+    description: "इम्यूनोलॉजी में बुनियादी अवधारणाएँ और आभासी प्रयोग।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Immunology Virtual Lab II",
-    description: "Advanced virtual lab modules and simulations in immunology.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "इम्यूनोलॉजी वर्चुअल लैब II",
+    description: "इम्यूनोलॉजी में उन्नत वर्चुअल लैब मॉड्यूल और सिमुलेशन।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Microbiology Virtual Lab I",
-    description: "Fundamental virtual lab experiments and techniques in microbiology.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "माइक्रोबायोलॉजी वर्चुअल लैब I",
+    description: "सूक्ष्म जीव विज्ञान में मौलिक आभासी प्रयोगशाला प्रयोग और तकनीक।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Microbiology Virtual Lab II",
-    description: "Advanced virtual lab modules and experiments in microbiology.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "माइक्रोबायोलॉजी वर्चुअल लैब II",
+    description: "माइक्रोबायोलॉजी में उन्नत वर्चुअल लैब मॉड्यूल और प्रयोग।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Molecular biology Virtual Lab I",
-    description: "Introductory virtual lab experiments in molecular biology.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "आण्विक जीवविज्ञान वर्चुअल लैब I",
+    description: "आणविक जीव विज्ञान में परिचयात्मक आभासी प्रयोगशाला प्रयोग।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Molecular Biology Virtual Lab II",
-    description: "Advanced virtual lab modules and simulations in molecular biology.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "आण्विक जीवविज्ञान वर्चुअल लैब II",
+    description: "आणविक जीव विज्ञान में उन्नत वर्चुअल लैब मॉड्यूल और सिमुलेशन।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Neuron Simulation Lab",
-    description: "Simulations and modeling of neurons and neural networks.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "न्यूरॉन सिमुलेशन लैब",
+    description: "न्यूरॉन्स और तंत्रिका नेटवर्क का सिमुलेशन और मॉडलिंग।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Neurophysiology Lab",
-    description: "Experiments and techniques in neurophysiology and neural function.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "न्यूरोफिज़ियोलॉजी लैब",
+    description: "न्यूरोफिज़ियोलॉजी और तंत्रिका कार्य में प्रयोग और तकनीक।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Population Ecology I",
-    description: "Basic principles and concepts of population ecology.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "जनसंख्या पारिस्थितिकी I",
+    description: "जनसंख्या पारिस्थितिकी के बुनियादी सिद्धांत और अवधारणाएँ।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Population Ecology II",
-    description: "Advanced topics and research in population ecology.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "जनसंख्या पारिस्थितिकी II",
+    description: "जनसंख्या पारिस्थितिकी में उन्नत विषय और अनुसंधान।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Systems Biology Virtual Lab",
-    description: "Virtual lab experiments and simulations in systems biology.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "सिस्टम बायोलॉजी वर्चुअल लैब",
+    description: "सिस्टम बायोलॉजी में वर्चुअल लैब प्रयोग और सिमुलेशन।",
+    college: "अमृता विश्वविद्यापीठम्"
   }
 ];
 
@@ -148,10 +148,10 @@ topics.forEach(topic => {
   card.innerHTML = `
       <h2>${topic.name}</h2>
       <p>${topic.description}</p>
-      <p class="college"><strong>College:</strong> ${topic.college}</p>
+      <p class="college"><strong>कॉलेज:</strong> ${topic.college}</p>
       <div class="buttons">
-          <button class="btn white-btn">Reference Books</button>
-          <button class="btn orange-btn">Syllabus Mapping</button>
+          <button class="btn white-btn">धार्मिक आस्था</button>
+          <button class="btn orange-btn">सिलेबस मैपिंग</button>
       </div>
   `;
 
