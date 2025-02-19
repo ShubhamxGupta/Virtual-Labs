@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("Loader.js: DOM fully loaded. Attempting to fetch chatbot.html...");
   
     // If your folder name has a space, you can write it exactly as is:
-    fetch("/Vlab ChatBot/chatbot.html")
+    fetch("English\VLab ChatBot\Chatbot.jpg")
       .then((response) => {
         console.log("Loader.js: chatbot.html response status:", response.status);
         return response.text();
@@ -18,12 +18,12 @@ document.addEventListener("DOMContentLoaded", function() {
         // Load Chatbot CSS
         const link = document.createElement("link");
         link.rel = "stylesheet";
-        link.href = "/Vlab ChatBot/styles.css";
+        link.href = "English\VLab ChatBot\styles.css";
         document.head.appendChild(link);
   
         // Load Chatbot logic
         const script = document.createElement("script");
-        script.src = "/Vlab ChatBot/script.js"; // Chatbot logic
+        script.src = "English\VLab ChatBot\script.js"; // Chatbot logic
         script.defer = true;
         document.body.appendChild(script);
   
