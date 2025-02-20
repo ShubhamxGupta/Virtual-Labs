@@ -2,94 +2,94 @@
 
 const topics = [
   {
-    name: "3D Printing Virtual Simulation Lab",
-    description: "Virtual simulations and hands-on experience with 3D printing technologies.",
-    college: "DAYALBAGH"
+    name: "3डी प्रिंटिंग वर्चुअल सिमुलेशन लैब",
+    description: "3डी प्रिंटिंग प्रौद्योगिकियों के साथ आभासी सिमुलेशन और व्यावहारिक अनुभव।",
+    college: "दयालबाग"
   },
   {
-    name: "Dynamics of Machine Lab",
-    description: "Study of machine dynamics, vibrations, and mechanisms through experiments.",
-    college: "NITK SURATHKAL"
+    name: "मशीन लैब की गतिशीलता",
+    description: "प्रयोगों के माध्यम से मशीन की गतिशीलता, कंपन और तंत्र का अध्ययन।",
+    college: "एनआईटीके सूरथकल"
   },
   {
-    name: "Electron Microscopy for Beginners",
-    description: "Introduction to electron microscopy techniques and applications.",
-    college: "IIT KANPUR"
+    name: "शुरुआती लोगों के लिए इलेक्ट्रॉन माइक्रोस्कोपी",
+    description: "इलेक्ट्रॉन माइक्रोस्कोपी तकनीकों और अनुप्रयोगों का परिचय।",
+    college: "ईट कानपुर"
   },
   {
-    name: "Engineering Graphics Lab (New)",
-    description: "Fundamentals of engineering drawing, projections, and graphical communication.",
-    college: "NITK SURATHKAL"
+    name: "इंजीनियरिंग ग्राफ़िक्स लैब (नया)",
+    description: "इंजीनियरिंग ड्राइंग, प्रक्षेपण और ग्राफिकल संचार के बुनियादी सिद्धांत।",
+    college: "एनआईटीके सूरथकल"
   },
   {
-    name: "FAB Lab",
-    description: "Hands-on experience with digital fabrication tools and technologies.",
-    college: "COEP Technological University Pune"
+    name: "फैब लैब",
+    description: "डिजिटल निर्माण उपकरण और प्रौद्योगिकियों के साथ व्यावहारिक अनुभव।",
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   },
   {
-    name: "Instrumentation and Control Lab (New)",
-    description: "Principles of instrumentation, measurement, and control systems.",
-    college: "COEP Technological University Pune"
+    name: "इंस्ट्रुमेंटेशन और कंट्रोल लैब (नया)",
+    description: "उपकरण, माप और नियंत्रण प्रणाली के सिद्धांत।",
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   },
   {
-    name: "Kinematics and Dynamics of Mechanisms Lab",
-    description: "Analysis of mechanisms, linkages, and their motion.",
-    college: "IIT KHARAGPUR"
+    name: "तंत्र प्रयोगशाला की किनेमेटिक्स और गतिशीलता",
+    description: "तंत्र, लिंकेज और उनकी गति का विश्लेषण।",
+    college: "आईआईटी खड़गपुर"
   },
   {
-    name: "Machine Dynamics & Mechanical Vibration Lab",
-    description: "Study of machine dynamics and vibration analysis.",
-    college: "NITK SURATHKAL"
+    name: "मशीन डायनेमिक्स एवं मैकेनिकल कंपन लैब",
+    description: "मशीन की गतिशीलता और कंपन विश्लेषण का अध्ययन।",
+    college: "एनआईटीके सूरथकल"
   },
   {
-    name: "Material Response to Microstructural, Mechanical, Thermal and Biological Stimuli Lab",
-    description: "Investigation of material behavior under various stimuli.",
-    college: "IIT KANPUR"
+    name: "माइक्रोस्ट्रक्चरल, मैकेनिकल, थर्मल और जैविक उत्तेजना लैब के लिए सामग्री प्रतिक्रिया",
+    description: "विभिन्न उत्तेजनाओं के तहत भौतिक व्यवहार की जांच।",
+    college: "ईट कानपुर"
   },
   {
-    name: "Mechanics of Machine Lab I",
-    description: "Basic principles of mechanics applied to machines and mechanisms.",
-    college: "NITK SURATHKAL"
+    name: "मशीन लैब I के यांत्रिकी",
+    description: "मशीनों और तंत्रों पर लागू यांत्रिकी के बुनियादी सिद्धांत।",
+    college: "एनआईटीके सूरथकल"
   },
   {
-    name: "Mechanics of Machines Lab 2",
-    description: "Advanced experiments in mechanics of machines and vibration analysis.",
-    college: "NITK SURATHKAL"
+    name: "मशीन प्रयोगशाला 2 के यांत्रिकी",
+    description: "मशीनों की यांत्रिकी और कंपन विश्लेषण में उन्नत प्रयोग।",
+    college: "एनआईटीके सूरथकल"
   },
   {
-    name: "Mechanisms and Robotics Lab",
-    description: "Study of mechanisms, robotics, and their applications.",
-    college: "IIT KHARAGPUR"
+    name: "तंत्र और रोबोटिक्स लैब",
+    description: "तंत्र, रोबोटिक्स और उनके अनुप्रयोगों का अध्ययन।",
+    college: "आईआईटी खड़गपुर"
   },
   {
-    name: "Metal Forming Virtual Simulation Lab",
-    description: "Virtual simulations of metal forming processes and techniques.",
-    college: "DAYALBAGH"
+    name: "मेटल फॉर्मिंग वर्चुअल सिमुलेशन लैब",
+    description: "धातु निर्माण प्रक्रियाओं और तकनीकों का आभासी सिमुलेशन।",
+    college: "दयालबाग"
   },
   {
-    name: "Micromachining Lab",
-    description: "Micromachining techniques, processes, and applications.",
-    college: "COEP Technological University Pune"
+    name: "माइक्रोमशीनिंग लैब",
+    description: "माइक्रोमशीनिंग तकनीकें, प्रक्रियाएं और अनुप्रयोग।",
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   },
   {
-    name: "Mine Automation & Virtual Reality",
-    description: "Applications of automation and virtual reality in mining engineering.",
-    college: "IIT KHARAGPUR"
+    name: "मेरा स्वचालन और आभासी वास्तविकता",
+    description: "खनन इंजीनियरिंग में स्वचालन और आभासी वास्तविकता के अनुप्रयोग।",
+    college: "आईआईटी खड़गपुर"
   },
   {
-    name: "Model Based Fault Detection Lab",
-    description: "Fault detection and diagnosis using model-based techniques.",
-    college: "IIT KHARAGPUR"
+    name: "मॉडल आधारित फॉल्ट डिटेक्शन लैब",
+    description: "मॉडल-आधारित तकनीकों का उपयोग करके दोष का पता लगाना और निदान करना।",
+    college: "आईआईटी खड़गपुर"
   },
   {
-    name: "Sensors and Instrumentation Lab (New)",
-    description: "Experiments with various sensors and instrumentation systems.",
-    college: "COEP Technological University Pune"
+    name: "सेंसर और इंस्ट्रुमेंटेशन लैब (नया)",
+    description: "विभिन्न सेंसरों और उपकरण प्रणालियों के साथ प्रयोग।",
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   },
   {
-    name: "Vibration and Acoustics Lab",
-    description: "Study of vibrations, acoustics, and their measurement.",
-    college: "COEP Technological University Pune"
+    name: "कंपन और ध्वनिकी प्रयोगशाला",
+    description: "कंपन, ध्वनिकी और उनके माप का अध्ययन।",
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   }
 ];
 
@@ -103,10 +103,10 @@ topics.forEach(topic => {
   card.innerHTML = `
       <h2>${topic.name}</h2>
       <p>${topic.description}</p>
-      <p class="college"><strong>College:</strong> ${topic.college}</p>
+      <p class="college"><strong>कॉलेज:</strong> ${topic.college}</p>
       <div class="buttons">
-          <button class="btn white-btn">Reference Books</button>
-          <button class="btn orange-btn">Syllabus Mapping</button>
+          <button class="btn white-btn">धार्मिक आस्था</button>
+          <button class="btn orange-btn">सिलेबस मैपिंग</button>
       </div>
   `;
 

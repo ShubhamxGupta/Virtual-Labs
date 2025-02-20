@@ -1,69 +1,69 @@
 
 const topics = [
     { 
-        name: "Advanced Mechanics Virtual Lab", 
-        description: "Conduct experiments and learn advanced dynamics concepts in mechanical systems virtually.",
-        college: "Amrita Vishwa Vidyapeeth"
+        name: "उन्नत यांत्रिकी वर्चुअल लैब", 
+        description: "प्रयोगों का संचालन करें और यांत्रिक प्रणालियों में उन्नत गतिशीलता अवधारणाओं को वस्तुतः सीखें।",
+        college: "अमृता विश्व विद्यापीठम"
     },
     { 
-        name: "Basics of Physics", 
-        description: " Interactive simulations and experiments to help students grasp fundamental physics concepts effectively.",
-        college: "IIT Kanpur"
+        name: "भौतिकी की मूल बातें", 
+        description: " छात्रों को मौलिक भौतिकी अवधारणाओं को प्रभावी ढंग से समझने में मदद करने के लिए इंटरैक्टिव सिमुलेशन और प्रयोग।",
+        college: "ईट कानपुर"
     },
     { 
-        name: "Digital Anthropology Lab", 
-        description: "Intersection of technology and human behavior through digital tools, data analysis, and virtual simulations.",
-        college: "IIT Guwahati"
+        name: "डिजिटल एंथ्रोपोलॉजी लैब", 
+        description: "डिजिटल उपकरण, डेटा विश्लेषण और वर्चुअल सिमुलेशन के माध्यम से प्रौद्योगिकी और मानव व्यवहार का अंतर्संबंध।",
+        college: "आईआईटी गुवाहाटी"
     },
     { 
-        name: "Electricity and Magnetism Virtual Lab", 
-        description: "Interactive simulations and experiments to enhance understanding of electromagnetic principles.",
-        college: "Amrita Vishwa Vidyapeetham"
+        name: "बिजली और चुंबकत्व वर्चुअल लैब", 
+        description: "विद्युत चुम्बकीय सिद्धांतों की समझ बढ़ाने के लिए इंटरैक्टिव सिमुलेशन और प्रयोग।",
+        college: "अमृता विश्व विद्यापीठम"
     },
     { 
-        name: "Heat and Thermodynamics Lab", 
-        description: "Interactive simulations and experiments to explore thermal physics and energy transfer concepts.",
-        college: "Amrita Vishwa Vidyapeetham"
+        name: "हीट और थर्मोडायनामिक्स लैब", 
+        description: "थर्मल भौतिकी और ऊर्जा हस्तांतरण अवधारणाओं का पता लगाने के लिए इंटरैक्टिव सिमुलेशन और प्रयोग।",
+        college: "अमृता विश्व विद्यापीठम"
     },
     { 
-        name: "Lasser Optics Virtual Lab", 
-        description: "Interactive simulations and experiments to study laser principles, optics, and photon behavior.",
-        college: "Amrita Vishwa Vidyapeetham"
+        name: "लेसर ऑप्टिक्स वर्चुअल लैब", 
+        description: "लेजर सिद्धांतों, प्रकाशिकी और फोटॉन व्यवहार का अध्ययन करने के लिए इंटरएक्टिव सिमुलेशन और प्रयोग।",
+        college: "अमृता विश्व विद्यापीठम"
     },
     { 
-        name: "Mechanical Metallurgy Lab(New)", 
+        name: "यांत्रिक धातुकर्म प्रयोगशाला (नई)", 
         description: "",
-        college: "IIT Kanpur"
+        college: "ईट कानपुर"
     },
     { 
-        name: "Mechanics Virtual Lab(Pilot)", 
-        description: "Cutting-edge facility dedicated to advancing research and education in the field of mechanical behavior of materials.",
-        college: "Amrita Vishwa Vidyapeetham"
+        name: "मैकेनिक्स वर्चुअल लैब (पायलट)", 
+        description: "सामग्रियों के यांत्रिक व्यवहार के क्षेत्र में अनुसंधान और शिक्षा को आगे बढ़ाने के लिए समर्पित अत्याधुनिक सुविधा।",
+        college: "अमृता विश्व विद्यापीठम"
     },
     { 
-        name: "Optics Virtual Lab", 
-        description: "Simulated environment for students to explore and experiment with optical phenomena and concepts remotely.",
-        college: "Amrita Vishwa Vidyapeetham"
+        name: "ऑप्टिक्स वर्चुअल लैब", 
+        description: "छात्रों के लिए दूर से ऑप्टिकल घटनाओं और अवधारणाओं का पता लगाने और प्रयोग करने के लिए सिम्युलेटेड वातावरण।",
+        college: "अमृता विश्व विद्यापीठम"
     },
     { 
-        name: "Probability and Statistics Lab(New)", 
-        description: "Provides students with resources and tools to explore and apply statistical concepts and methods through computational and practical exercises.",
-        college: "IIT Delhi"
+        name: "संभाव्यता एवं सांख्यिकी प्रयोगशाला (नई)", 
+        description: "कम्प्यूटेशनल और व्यावहारिक अभ्यासों के माध्यम से सांख्यिकीय अवधारणाओं और विधियों का पता लगाने और लागू करने के लिए छात्रों को संसाधन और उपकरण प्रदान करता है।",
+        college: "आईआईटी दिल्ली"
     },
     { 
-        name: "Queuing Theory and Modelling Lab(New)", 
-        description: "Provides a platform for students to study and simulate queuing systems, analyzing their performance and optimizing their design.",
-        college: "IIT Delhi"
+        name: "कतारबद्ध सिद्धांत और मॉडलिंग लैब (नया)", 
+        description: "छात्रों को कतारबद्ध प्रणालियों का अध्ययन और अनुकरण करने, उनके प्रदर्शन का विश्लेषण करने और उनके डिजाइन को अनुकूलित करने के लिए एक मंच प्रदान करता है।",
+        college: "आईआईटी दिल्ली"
     },
     { 
-        name: "Virtual Astrophysics Lab", 
-        description: " Interactive online platform for simulating and exploring astrophysical phenomena.",
-        college: "IIT Kanpur"
+        name: "वर्चुअल एस्ट्रोफिजिक्स लैब", 
+        description: " खगोलभौतिकीय घटनाओं के अनुकरण और अन्वेषण के लिए इंटरैक्टिव ऑनलाइन मंच।",
+        college: "ईट कानपुर"
     },
     { 
-        name: "Virtual English and Communication Lab", 
-        description: "Online platform designed to enhance language and communication skills through interactive learning modules.",
-        college: "IIT Guwahati"
+        name: "वर्चुअल इंग्लिश एंड कम्युनिकेशन लैब", 
+        description: "इंटरैक्टिव शिक्षण मॉड्यूल के माध्यम से भाषा और संचार कौशल को बढ़ाने के लिए डिज़ाइन किया गया ऑनलाइन प्लेटफ़ॉर्म।",
+        college: "आईआईटी गुवाहाटी"
     },
 ];
 
@@ -77,10 +77,10 @@ topics.forEach(topic => {
     card.innerHTML = `
         <h2>${topic.name}</h2>
         <p>${topic.description}</p>
-        <p class="college"><strong>College:</strong> ${topic.college}</p>
+        <p class="college"><strong>कॉलेज:</strong> ${topic.college}</p>
         <div class="buttons">
-            <button class="btn white-btn">Reference Books</button>
-            <button class="btn orange-btn">Syllabus Mapping</button>
+            <button class="btn white-btn">धार्मिक आस्था</button>
+            <button class="btn orange-btn">सिलेबस मैपिंग</button>
         </div>
     `;
 
