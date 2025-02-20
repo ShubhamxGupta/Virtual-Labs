@@ -2,104 +2,104 @@
 
 const topics = [
   {
-    name: "Analog Signals, Network and Measurement Virtual Laboratory",
-    description: "Experiments related to analog signals, network analysis, and measurement techniques.",
-    college: "IIT Kharagpur"
+    name: "एनालॉग सिग्नल, नेटवर्क और मापन आभासी प्रयोगशाला",
+    description: "एनालॉग सिग्नल, नेटवर्क विश्लेषण और माप तकनीक से संबंधित प्रयोग।",
+    college: "आईआईटी खड़गपुर"
   },
   {
-    name: "Basics of Pneumatic Components Lab",
-    description: "Fundamentals of pneumatic systems and components, including hands-on experiments.",
-    college: "COEP Technological University Pune"
+    name: "वायवीय घटक प्रयोगशाला की मूल बातें",
+    description: "व्यावहारिक प्रयोगों सहित वायवीय प्रणालियों और घटकों की बुनियादी बातें।",
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   },
   {
-    name: "Control Engineering Lab (New)",
-    description: "Practical experience with control systems, feedback mechanisms, and stability analysis.",
-    college: "DAYALBAGH"
+    name: "नियंत्रण इंजीनियरिंग लैब (नया)",
+    description: "नियंत्रण प्रणाली, फीडबैक तंत्र और स्थिरता विश्लेषण के साथ व्यावहारिक अनुभव।",
+    college: "दयालबाग"
   },
   {
-    name: "Electrical Machines (COEP) Lab",
-    description: "Experiments on various electrical machines, including their operation and characteristics.",
-    college: "COEP Technological University Pune"
+    name: "इलेक्ट्रिकल मशीनें (सीओईपी) लैब",
+    description: "विभिन्न विद्युत मशीनों पर प्रयोग, उनके संचालन और विशेषताओं सहित।",
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   },
   {
-    name: "Electrical Machines Lab",
-    description: "Hands-on experiments with electrical machines, transformers, and related equipment.",
-    college: "IIT ROORKEE"
+    name: "इलेक्ट्रिकल मशीन लैब",
+    description: "विद्युत मशीनों, ट्रांसफार्मर और संबंधित उपकरणों के साथ व्यावहारिक प्रयोग।",
+    college: "आईआईटी रूड़की"
   },
   {
-    name: "Electrical Measurements Lab (New)",
-    description: "Modern techniques for electrical measurements, instrumentation, and data analysis.",
-    college: "IIT ROORKEE"
+    name: "विद्युत माप प्रयोगशाला (नई)",
+    description: "विद्युत माप, उपकरणीकरण और डेटा विश्लेषण के लिए आधुनिक तकनीकें।",
+    college: "आईआईटी रूड़की"
   },
   {
-    name: "Industrial Automation Lab",
-    description: "Practical training in industrial automation systems, PLCs, and control processes.",
-    college: "COEP Technological University Pune"
+    name: "औद्योगिक स्वचालन प्रयोगशाला",
+    description: "औद्योगिक स्वचालन प्रणाली, पीएलसी और नियंत्रण प्रक्रियाओं में व्यावहारिक प्रशिक्षण।",
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   },
   {
-    name: "Industrial Electric Drives Lab",
-    description: "Experiments on electric drives, motor control, and power electronics applications.",
-    college: "NITK SURATHKAL"
+    name: "औद्योगिक इलेक्ट्रिक ड्राइव लैब",
+    description: "इलेक्ट्रिक ड्राइव, मोटर नियंत्रण और पावर इलेक्ट्रॉनिक्स अनुप्रयोगों पर प्रयोग।",
+    college: "एनआईटीके सूरथकल"
   },
   {
-    name: "Microwave Engineering Lab (New)",
-    description: "Microwave devices, circuits, measurements, and applications.",
-    college: "IIT ROORKEE"
+    name: "माइक्रोवेव इंजीनियरिंग लैब (नया)",
+    description: "माइक्रोवेव उपकरण, सर्किट, माप और अनुप्रयोग।",
+    college: "आईआईटी रूड़की"
   },
   {
-    name: "Optical Communication Lab (New)",
-    description: "Optical fiber communication systems, components, and experiments.",
-    college: "IIT ROORKEE"
+    name: "ऑप्टिकल कम्युनिकेशन लैब (नया)",
+    description: "ऑप्टिकल फाइबर संचार प्रणाली, घटक और प्रयोग।",
+    college: "आईआईटी रूड़की"
   },
   {
-    name: "PLC Lab",
-    description: "Programmable Logic Controllers (PLCs) and their applications in automation.",
-    college: "COEP Technological University Pune"
+    name: "पीएलसी लैब",
+    description: "प्रोग्रामेबल लॉजिक कंट्रोलर (पीएलसी) और स्वचालन में उनके अनुप्रयोग।",
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   },
   {
-    name: "Power Electronics | Virtual Lab (New)",
-    description: "Virtual experiments on power electronic circuits and devices.",
-    college: "IIT DELHI"
+    name: "पावर इलेक्ट्रॉनिक्स | वर्चुअल लैब (नया)",
+    description: "पावर इलेक्ट्रॉनिक सर्किट और उपकरणों पर आभासी प्रयोग।",
+    college: "आईआईटी दिल्ली"
   },
   {
-    name: "Power Electronics II Virtual Lab (New)",
-    description: "Advanced virtual experiments in power electronics and drive systems.",
-    college: "IIT DELHI"
+    name: "पावर इलेक्ट्रॉनिक्स II वर्चुअल लैब (नया)",
+    description: "पावर इलेक्ट्रॉनिक्स और ड्राइव सिस्टम में उन्नत आभासी प्रयोग।",
+    college: "आईआईटी दिल्ली"
   },
   {
-    name: "Power Electronics Lab (New)",
-    description: "Experiments on power electronics circuits, converters, and applications.",
-    college: "IIT ROORKEE"
+    name: "पावर इलेक्ट्रॉनिक्स लैब (नया)",
+    description: "पावर इलेक्ट्रॉनिक्स सर्किट, कन्वर्टर्स और अनुप्रयोगों पर प्रयोग।",
+    college: "आईआईटी रूड़की"
   },
   {
-    name: "Process Loop Component and Control Valve for Various Applications Lab",
+    name: "विभिन्न अनुप्रयोगों की प्रयोगशाला के लिए प्रोसेस लूप घटक और नियंत्रण वाल्व",
     description: "Study of process control components, valves, and their applications.",
-    college: "COEP Technological University Pune"
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   },
   {
-    name: "Process Loop Component for Current and Pneumatic Converters Lab",
-    description: "Experiments on current and pneumatic converters in process control systems.",
-    college: "COEP Technological University Pune"
+    name: "करंट और न्यूमेटिक कन्वर्टर्स लैब के लिए प्रोसेस लूप घटक",
+    description: "प्रक्रिया नियंत्रण प्रणालियों में वर्तमान और वायवीय कनवर्टर्स पर प्रयोग।",
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   },
   {
-    name: "Process Loop Component for High Low Selector and Alarm Annunciators Lab",
-    description: "Understanding high/low selectors and alarm annunciators in process control.",
-    college: "COEP Technological University Pune"
+    name: "हाई लो सिलेक्टर और अलार्म एनाउंसिएटर्स लैब के लिए प्रोसेस लूप कंपोनेंट",
+    description: "प्रक्रिया नियंत्रण में उच्च/निम्न चयनकर्ताओं और अलार्म उद्घोषकों को समझना।",
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   },
   {
-    name: "Process Loop Component for Transmitter and Tank Applications Lab",
-    description: "Transmitters and tank level control in process applications.",
-    college: "COEP Technological University Pune"
+    name: "ट्रांसमीटर और टैंक अनुप्रयोग लैब के लिए प्रक्रिया लूप घटक",
+    description: "प्रक्रिया अनुप्रयोगों में ट्रांसमीटर और टैंक स्तर नियंत्रण।",
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   },
   {
-    name: "Real Time Embedded Systems Lab",
-    description: "Real-time embedded systems programming, hardware interfacing, and applications.",
-    college: "IIT KHARAGPUR"
+    name: "रियल टाइम एंबेडेड सिस्टम लैब",
+    description: "रीयल-टाइम एंबेडेड सिस्टम प्रोग्रामिंग, हार्डवेयर इंटरफ़ेसिंग और एप्लिकेशन।",
+    college: "आईआईटी खड़गपुर"
   },
   {
-    name: "Sensors Modeling & Simulation Lab",
-    description: "Sensor modeling, simulation, and data analysis for various applications.",
-    college: "COEP Technological University Pune"
+    name: "सेंसर मॉडलिंग एवं सिमुलेशन लैब",
+    description: "विभिन्न अनुप्रयोगों के लिए सेंसर मॉडलिंग, सिमुलेशन और डेटा विश्लेषण।",
+    college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
   },
   {
     name: "Single Board Heater System Lab",
@@ -107,24 +107,24 @@ const topics = [
     college: "IIT BOMBAY"
   },
   {
-    name: "Substation Automation Lab",
-    description: "Substation automation systems, communication protocols, and control techniques.",
-    college: "NITK SURATHKAL"
+    name: "सबस्टेशन ऑटोमेशन लैब",
+    description: "सबस्टेशन स्वचालन प्रणाली, संचार प्रोटोकॉल और नियंत्रण तकनीक।",
+    college: "एनआईटीके सूरथकल"
   },
   {
-    name: "Virtual High Voltage Lab",
-    description: "Virtual experiments on high voltage phenomena, equipment, and safety.",
-    college: "IIT KHARAGPUR"
+    name: "वर्चुअल हाई वोल्टेज लैब",
+    description: "उच्च वोल्टेज घटना, उपकरण और सुरक्षा पर आभासी प्रयोग।",
+    college: "आईआईटी खड़गपुर"
   },
   {
-    name: "Virtual Laboratory For Simulation and Gaming",
-    description: "Simulation and game development using virtual laboratory environments.",
-    college: "IIT KHARAGPUR"
+    name: "सिमुलेशन और गेमिंग के लिए आभासी प्रयोगशाला",
+    description: "आभासी प्रयोगशाला वातावरण का उपयोग करके सिमुलेशन और गेम विकास।",
+    college: "आईआईटी खड़गपुर"
   },
   {
-    name: "Virtual Power Lab",
-    description: "Virtual experiments on power systems, power flow, and stability analysis.",
-    college: "DAYALBAGH"
+    name: "वर्चुअल पावर लैब",
+    description: "विद्युत प्रणालियों, विद्युत प्रवाह और स्थिरता विश्लेषण पर आभासी प्रयोग।",
+    college: "दयालबाग"
   }
 ];
 
@@ -138,10 +138,10 @@ topics.forEach(topic => {
   card.innerHTML = `
       <h2>${topic.name}</h2>
       <p>${topic.description}</p>
-      <p class="college"><strong>College:</strong> ${topic.college}</p>
+      <p class="college"><strong>कॉलेज:</strong> ${topic.college}</p>
       <div class="buttons">
-          <button class="btn white-btn">Reference Books</button>
-          <button class="btn orange-btn">Syllabus Mapping</button>
+          <button class="btn white-btn">धार्मिक आस्था</button>
+          <button class="btn orange-btn">सिलेबस मैपिंग</button>
       </div>
   `;
 

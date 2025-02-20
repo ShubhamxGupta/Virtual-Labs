@@ -1,64 +1,64 @@
 
 const topics = [
     { 
-        name: "Analog and Digital Electronics Lab-I", 
-        description: "Hands-on experiments with fundamental analog and digital circuits, including logic gates, amplifiers, and microcontrollers.",
-        college: "IIT Roorkee"
+        name: "एनालॉग और डिजिटल इलेक्ट्रॉनिक्स लैब-I", 
+        description: "लॉजिक गेट्स, एम्पलीफायरों और माइक्रोकंट्रोलर सहित मौलिक एनालॉग और डिजिटल सर्किट के साथ व्यावहारिक प्रयोग।",
+        college: "आईआईटी रूड़की"
     },
     { 
-        name: "Analog and Digital Electronics Lab-II", 
-        description: "Builds on foundational concepts, focusing on advanced circuit design, signal processing, and microprocessor-based applications.",
-        college: "IIT Roorkee"
+        name: "एनालॉग और डिजिटल इलेक्ट्रॉनिक्स लैब- II", 
+        description: "उन्नत सर्किट डिजाइन, सिग्नल प्रोसेसिंग और माइक्रोप्रोसेसर-आधारित अनुप्रयोगों पर ध्यान केंद्रित करते हुए, मूलभूत अवधारणाओं पर आधारित है।",
+        college: "आईआईटी रूड़की"
     },
     { 
-        name: "Analog Electronics Circuits Virtual Lab", 
-        description: "Interactive platform for simulating and experimenting with analog circuits, including amplifiers, oscillators, and signal processing components.",
-        college: "IIT Kharagpur"
+        name: "एनालॉग इलेक्ट्रॉनिक्स सर्किट वर्चुअल लैब", 
+        description: "एम्पलीफायरों, ऑसिलेटर और सिग्नल प्रोसेसिंग घटकों सहित एनालॉग सर्किट के अनुकरण और प्रयोग के लिए इंटरैक्टिव प्लेटफ़ॉर्म।",
+        college: "आईआईटी खड़गपुर"
     },
     { 
-        name: "Basic Electronics Lab", 
-        description: "Hands-on experience with fundamental electronic components, circuits, and measurement techniques essential for understanding electronic systems.",
-        college: "IIT Kharagpur"
+        name: "बेसिक इलेक्ट्रॉनिक्स लैब", 
+        description: "इलेक्ट्रॉनिक सिस्टम को समझने के लिए आवश्यक मौलिक इलेक्ट्रॉनिक घटकों, सर्किट और माप तकनीकों का व्यावहारिक अनुभव।",
+        college: "आईआईटी खड़गपुर"
     },
     { 
-        name: "Digital Applications Lab", 
-        description: "Practical implementations of digital circuits and systems, focusing on logic design, microprocessors, and embedded applications.",
-        college: "IIT Bombay"
+        name: "डिजिटल एप्लीकेशन लैब", 
+        description: "डिजिटल सर्किट और सिस्टम का व्यावहारिक कार्यान्वयन, तर्क डिजाइन, माइक्रोप्रोसेसर और एम्बेडेड अनुप्रयोगों पर ध्यान केंद्रित करना।",
+        college: "आईआईटी बॉम्बे"
     },
     { 
-        name: "Digital Electronic Circuits Lab", 
-        description: "Hands-on experience with logic gates, combinational and sequential circuits, and FPGA-based digital system design.",
-        college: "IIT Kharagpur"
+        name: "डिजिटल इलेक्ट्रॉनिक सर्किट लैब", 
+        description: "लॉजिक गेट्स, संयोजन और अनुक्रमिक सर्किट और एफपीजीए-आधारित डिजिटल सिस्टम डिज़ाइन के साथ व्यावहारिक अनुभव।",
+        college: "आईआईटी खड़गपुर"
     },
     { 
-        name: "Digital Electronics Lab-I", 
-        description: "Hands-on experience with digital logic design, covering logic gates, combinational and sequential circuits, and hardware implementation.",
-        college: "IIT Roorkee"
+        name: "डिजिटल इलेक्ट्रॉनिक्स लैब- I", 
+        description: "डिजिटल लॉजिक डिज़ाइन, लॉजिक गेट्स, संयोजन और अनुक्रमिक सर्किट और हार्डवेयर कार्यान्वयन को कवर करने का व्यावहारिक अनुभव।",
+        college: "आईआईटी रूड़की"
     },
     { 
-        name: "Digital Electronics Lab-II", 
-        description: "Focuses on advanced digital circuit design, including sequential logic, FPGA implementation, and microprocessor-based systems.",
-        college: "IIT Guwahati"
+        name: "डिजिटल इलेक्ट्रॉनिक्स लैब- II", 
+        description: "अनुक्रमिक तर्क, एफपीजीए कार्यान्वयन और माइक्रोप्रोसेसर-आधारित सिस्टम सहित उन्नत डिजिटल सर्किट डिजाइन पर ध्यान केंद्रित करता है।",
+        college: "आईआईटी गुवाहाटी"
     },
     { 
-        name: "Digital Logic Design Lab", 
-        description: "Hands-on experience in designing, simulating, and implementing digital circuits using logic gates, combinational and sequential circuits, and hardware description languages.",
-        college: "IIT Bombay"
+        name: "डिजिटल लॉजिक डिज़ाइन लैब", 
+        description: "लॉजिक गेट्स, संयोजन और अनुक्रमिक सर्किट और हार्डवेयर विवरण भाषाओं का उपयोग करके डिजिटल सर्किट को डिजाइन, अनुकरण और कार्यान्वित करने में व्यावहारिक अनुभव।",
+        college: "आईआईटी बॉम्बे"
     },
     { 
-        name: "Hybrid Electronics Lab", 
-        description: "Integration of analog, digital, and power electronics, focusing on circuit design, signal processing, and embedded systems.",
-        college: "COEP Technological University Pune"
+        name: "हाइब्रिड इलेक्ट्रॉनिक्स लैब", 
+        description: "सर्किट डिजाइन, सिग्नल प्रोसेसिंग और एम्बेडेड सिस्टम पर ध्यान केंद्रित करते हुए एनालॉग, डिजिटल और पावर इलेक्ट्रॉनिक्स का एकीकरण।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे"
     },
     { 
-        name: "Microelectronics & VLSI Engineering Lab", 
-        description: "Focuses on designing, simulating, and testing semiconductor devices, IC fabrication, and VLSI circuit development.",
-        college: "IIT Kharagpur"
+        name: "माइक्रोइलेक्ट्रॉनिक्स और वीएलएसआई इंजीनियरिंग लैब", 
+        description: "अर्धचालक उपकरणों, आईसी निर्माण और वीएलएसआई सर्किट विकास के डिजाइन, अनुकरण और परीक्षण पर ध्यान केंद्रित करता है।",
+        college: "आईआईटी खड़गपुर"
     },
     { 
-        name: "Digital Signal Processing Virtual Lab", 
-        description: "Interactive platform for experimenting with DSP concepts like filtering, sampling, and Fourier analysis through simulations.",
-        college: "IIT Kharagpur"
+        name: "डिजिटल सिग्नल प्रोसेसिंग वर्चुअल लैब", 
+        description: "सिमुलेशन के माध्यम से फ़िल्टरिंग, नमूनाकरण और फूरियर विश्लेषण जैसी डीएसपी अवधारणाओं के साथ प्रयोग करने के लिए इंटरैक्टिव मंच।",
+        college: "आईआईटी खड़गपुर"
     },
 ];
 
@@ -72,10 +72,10 @@ topics.forEach(topic => {
     card.innerHTML = `
         <h2>${topic.name}</h2>
         <p>${topic.description}</p>
-        <p class="college"><strong>College:</strong> ${topic.college}</p>
+        <p class="college"><strong>कॉलेज:</strong> ${topic.college}</p>
         <div class="buttons">
-            <button class="btn white-btn">Reference Books</button>
-            <button class="btn orange-btn">Syllabus Mapping</button>
+            <button class="btn white-btn">धार्मिक आस्था</button>
+            <button class="btn orange-btn">सिलेबस मैपिंग</button>
         </div>
     `;
 

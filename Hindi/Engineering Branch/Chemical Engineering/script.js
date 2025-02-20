@@ -2,24 +2,24 @@
 
 const topics = [
   {
-    name: "Chemical Engineering Lab",
-    description: "Experiments and analysis in various chemical engineering principles.",
-    college: "IIT BOMBAY"
+    name: "केमिकल इंजीनियरिंग लैब",
+    description: "विभिन्न रासायनिक इंजीनियरिंग सिद्धांतों में प्रयोग और विश्लेषण।",
+    college: "आईआईटी बॉम्बे"
   },
   {
-    name: "Chemical Process Dynamics Laboratory",
-    description: "Study of the dynamic behavior of chemical processes and their control.",
-    college: "IIT KHARAGPUR"
+    name: "रासायनिक प्रक्रिया गतिशीलता प्रयोगशाला",
+    description: "रासायनिक प्रक्रियाओं के गतिशील व्यवहार और उनके नियंत्रण का अध्ययन।",
+    college: "आईआईटी खड़गपुर"
   },
   {
-    name: "Process Control, Reaction Engineering and Unit Operations Lab",
-    description: "Practical applications of process control, reaction engineering, and unit operations.",
-    college: "NITK SURATHKAL"
+    name: "प्रक्रिया नियंत्रण, प्रतिक्रिया इंजीनियरिंग और इकाई संचालन प्रयोगशाला",
+    description: "प्रक्रिया नियंत्रण, प्रतिक्रिया इंजीनियरिंग और इकाई संचालन के व्यावहारिक अनुप्रयोग।",
+    college: "एनआईटीके सूरथकल"
   },
   {
-    name: "Virtual Mass Transfer Lab",
-    description: "Virtual experiments and simulations for understanding mass transfer concepts.",
-    college: "IIT GUWAHATI"
+    name: "वर्चुअल मास ट्रांसफर लैब",
+    description: "बड़े पैमाने पर स्थानांतरण अवधारणाओं को समझने के लिए आभासी प्रयोग और सिमुलेशन।",
+    college: " आईआईटी गुवाहाटी"
   }
 ];
 
@@ -33,10 +33,10 @@ topics.forEach(topic => {
   card.innerHTML = `
       <h2>${topic.name}</h2>
       <p>${topic.description}</p>
-      <p class="college"><strong>College:</strong> ${topic.college}</p>
+      <p class="college"><strong>कॉलेज:</strong> ${topic.college}</p>
       <div class="buttons">
-          <button class="btn white-btn">Reference Books</button>
-          <button class="btn orange-btn">Syllabus Mapping</button>
+          <button class="btn white-btn">धार्मिक आस्था</button>
+          <button class="btn orange-btn">सिलेबस मैपिंग</button>
       </div>
   `;
 
