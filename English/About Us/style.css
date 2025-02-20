@@ -38,11 +38,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+<<<<<<< HEAD
     margin: 50px;
     gap: 40px;
     width: 90%; 
     max-width: 1200px; 
     margin: 50px auto; 
+=======
+    margin: 40px;
+    gap: 40px;
+>>>>>>> 7efe549f951bc2fbab991dd0ebb5ff3ce9544f6a
 }
 
 .itali {
@@ -55,9 +60,14 @@
 }
 
 .content {
+<<<<<<< HEAD
     width: 55%; 
     color: #555;
     margin-left: 0; 
+=======
+    width: 55%;
+    color: #555;
+>>>>>>> 7efe549f951bc2fbab991dd0ebb5ff3ce9544f6a
 }
 
 .right-bar {
@@ -65,8 +75,13 @@
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
     width: 40%; 
     margin-top: 80px; 
+=======
+    width: 35%;
+    margin-top: 50px;
+>>>>>>> 7efe549f951bc2fbab991dd0ebb5ff3ce9544f6a
 }
 
 .detail-info {
@@ -137,6 +152,7 @@
     }
 
     .detail-info {
+<<<<<<< HEAD
         flex-direction: column;
         align-items: flex-start;
     }
@@ -153,6 +169,37 @@
         margin: 50px;
     }
 
+=======
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 30px;
+    }
+
+    .content {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .right-bar {
+        width: 90%;
+    }
+
+    .detail-info {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+>>>>>>> 7efe549f951bc2fbab991dd0ebb5ff3ce9544f6a
     .about {
         flex-direction: row;
         align-items: flex-start;
@@ -163,15 +210,60 @@
     }
 
     .content {
+<<<<<<< HEAD
         width: 55%;
     }
 
     .right-bar {
         width: 40%;
+=======
+        width: 60%;
+        margin-left: 0;
     }
 
+    .right-bar {
+        width: 35%;
+>>>>>>> 7efe549f951bc2fbab991dd0ebb5ff3ce9544f6a
+    }
+
+<<<<<<< HEAD
     .detail-info {
         flex-direction: row;
         align-items: center;
+=======
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .about {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 50px;
+        margin: 50px;
+    }
+
+    .content {
+        width: 65%;
+        margin-left: 0;
+    }
+
+    .right-bar {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 60px;
+        margin: 60px;
+    }
+
+    .content {
+        width: 70%;
+        margin-left: 0;
+    }
+
+    .right-bar {
+        width: 25%;
+>>>>>>> 7efe549f951bc2fbab991dd0ebb5ff3ce9544f6a
     }
 }
