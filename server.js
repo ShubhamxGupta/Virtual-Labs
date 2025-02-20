@@ -8,7 +8,7 @@ const path = require('path');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 // If needed: const { HarmCategory, HarmBlockThreshold } = require('@google/generative-ai');
 
-const apiKey = process.env.GEMINI_API_KEY || 'AIzaSy...YourKey';
+const apiKey = process.env.GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const model = genAI.getGenerativeModel({
@@ -165,7 +165,7 @@ const chatSession = model.startChat({
 });
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 app.use(cors()); 
 
 app.use(express.json());

@@ -238,17 +238,12 @@ nav {
     color: #666;
 }
 
-.card-text {
-    height: 130px;
-}
-
 /* Buttons Section */
 .buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
-    align-items: end;
 }
 
 .btn {
