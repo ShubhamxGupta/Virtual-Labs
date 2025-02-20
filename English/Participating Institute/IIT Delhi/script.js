@@ -62,9 +62,11 @@ topics.forEach((topic) => {
     card.classList.add("card");
 
     card.innerHTML = `
-        <h2>${topic.name}</h2>
-        <p>${topic.description}</p>
-        <p class="college"><strong>College:</strong> ${topic.college}</p>
+        <div class="card-text">
+            <h2>${topic.name}</h2>
+            <p>${topic.description}</p>
+            <p class="college"><strong>College:</strong> ${topic.college}</p>
+        </div>
         <div class="buttons">
             <button class="btn white-btn">Reference Books</button>
             <button class="btn orange-btn">Syllabus Mapping</button>

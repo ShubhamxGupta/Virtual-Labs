@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../assets/commonCSS/header.css" />
+        <link rel="stylesheet" href="../../assets/commonCSS/footer.css" />
+        <link rel="stylesheet" href="../VLab ChatBot/styles.css" />
         <link rel="stylesheet" href="style.css" />
         <script src="../VLab ChatBot/loader.js" defer></script>
         <title>Virtual Labs</title>
@@ -40,11 +43,15 @@
                     <div></div>
                 </button>
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="#">Outreach Portal</a></li>
                     <li><a href="#">Participating Institutes</a></li>
-                    <li><a href="#">NMEICT</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li>
+                        <a href="https://nmeict.ac.in/" target="_blank"
+                            >NMEICT</a
+                        >
+                    </li>
+                    <li><a href="../Contact Us/index.html">Contact Us</a></li>
                     <li><a href="#">About Us</a></li>
                 </ul>
             </nav>
@@ -300,6 +307,22 @@
                 </h5>
             </div>
         </div>
+        <div class="chatbot-container">
+            <div class="chat-header" onclick="toggleChat()">
+                <img src="../../assets/img/Chatbot.jpg" alt="Chatbot Icon" />
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div id="chat-box" class="chat-box"></div>
+                <div class="input-container">
+                    <input
+                        type="text"
+                        id="user-input"
+                        placeholder="Ask me anything..."
+                    />
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-section">
@@ -328,5 +351,6 @@
             </div>
         </footer>
         <script src="script.js"></script>
+        <script src="../VLab ChatBot/script.js"></script>
     </body>
 </html>
