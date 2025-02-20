@@ -2,44 +2,44 @@
 
 const topics = [
   {
-    name: "Circular Dichroism Spectroscopy Lab",
-    description: "Experiments and analysis using Circular Dichroism (CD) spectroscopy.",
-    college: "IIIT HYDERABAD"
+    name: "सर्कुलर डाइक्रोइज्म स्पेक्ट्रोस्कोपी लैब",
+    description: "सर्कुलर डाइक्रोइज़्म (सीडी) स्पेक्ट्रोस्कोपी का उपयोग करके प्रयोग और विश्लेषण।",
+    college: "आईआईआईटी हैदराबाद"
   },
   {
-    name: "Colloid and Surface Chemistry Lab",
-    description: "Study of colloids, surface chemistry, and related phenomena.",
-    college: "IIIT HYDERABAD"
+    name: "कोलाइड और सतह रसायन विज्ञान प्रयोगशाला",
+    description: "कोलाइड्स, सतह रसायन विज्ञान और संबंधित घटनाओं का अध्ययन।",
+    college: "आईआईआईटी हैदराबाद"
   },
   {
-    name: "Inorganic Chemistry Virtual Lab",
-    description: "Virtual experiments and simulations in inorganic chemistry.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "अकार्बनिक रसायन विज्ञान वर्चुअल लैब",
+    description: "अकार्बनिक रसायन विज्ञान में आभासी प्रयोग और सिमुलेशन।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Molecular Absorption Spectroscopy Lab",
-    description: "Experiments on molecular absorption spectroscopy techniques.",
-    college: "IIIT HYDERABAD"
+    name: "आणविक अवशोषण स्पेक्ट्रोस्कोपी लैब",
+    description: "आणविक अवशोषण स्पेक्ट्रोस्कोपी तकनीकों पर प्रयोग।",
+    college: "आईआईआईटी हैदराबाद"
   },
   {
-    name: "Molecular Fluorescence Spectroscopy Lab",
-    description: "Study of molecular fluorescence spectroscopy and applications.",
-    college: "IIIT HYDERABAD"
+    name: "आणविक प्रतिदीप्ति स्पेक्ट्रोस्कोपी लैब",
+    description: "आणविक प्रतिदीप्ति स्पेक्ट्रोस्कोपी और अनुप्रयोगों का अध्ययन।",
+    college: "आईआईआईटी हैदराबाद"
   },
   {
-    name: "Physical Chemistry (Amrita) Lab",
-    description: "Experiments in physical chemistry relevant to the Amrita curriculum.",
-    college: "AMRITA VISHWA VIDYAPEETHAM"
+    name: "फिजिकल केमिस्ट्री (अमृता) लैब",
+    description: "अमृता पाठ्यक्रम से संबंधित भौतिक रसायन विज्ञान में प्रयोग।",
+    college: "अमृता विश्वविद्यापीठम्"
   },
   {
-    name: "Physical Chemistry (IIITH) Lab",
-    description: "Experiments in physical chemistry specific to the IIIT Hyderabad curriculum.",
-    college: "IIIT HYDERABAD"
+    name: "फिजिकल केमिस्ट्री (IIITH) लैब",
+    description: "आईआईआईटी हैदराबाद पाठ्यक्रम के लिए विशिष्ट भौतिक रसायन विज्ञान में प्रयोग।",
+    college: "आईआईआईटी हैदराबाद"
   },
   {
-    name: "Quantum Chemistry Lab",
-    description: "Practical applications of quantum chemistry principles and calculations.",
-    college: "IIIT HYDERABAD"
+    name: "क्वांटम केमिस्ट्री लैब",
+    description: "क्वांटम रसायन विज्ञान सिद्धांतों और गणनाओं का व्यावहारिक अनुप्रयोग।",
+    college: "आईआईआईटी हैदराबाद"
   }
 ];
 
@@ -53,10 +53,10 @@ topics.forEach(topic => {
   card.innerHTML = `
       <h2>${topic.name}</h2>
       <p>${topic.description}</p>
-      <p class="college"><strong>College:</strong> ${topic.college}</p>
+      <p class="college"><strong>कॉलेज:</strong> ${topic.college}</p>
       <div class="buttons">
-          <button class="btn white-btn">Reference Books</button>
-          <button class="btn orange-btn">Syllabus Mapping</button>
+          <button class="btn white-btn">धार्मिक आस्था</button>
+          <button class="btn orange-btn">सिलेबस मैपिंग</button>
       </div>
   `;
 
