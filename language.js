@@ -1,21 +1,27 @@
 function toggleLanguage() {
-    const currentPath = window.location.pathname; // e.g., "/English/landing-page/index.html"
-    let newPath;
-
-    // Check if the path starts with "/English/"
-    if (/^\/English\//i.test(currentPath)) {
-        newPath = currentPath.replace(/^\/English\//i, "/Hindi/");
+    const currentPath = window.location.pathname; 
+    
+    const langRegex = /^\/(english|hindi|en|hi)\//i;
+    const match = currentPath.match(langRegex);
+    
+    if (!match) {
+      console.warn("No recognized language folder found in URL. The page remains unchanged.");
+      return;
     }
-    // Otherwise, check if it starts with "/Hindi/"
-    else if (/^\/Hindi\//i.test(currentPath)) {
-        newPath = currentPath.replace(/^\/Hindi\//i, "/English/");
+    
+    const currentLang = match[1].toLowerCase();
+    let newLang;
+    if (currentLang === "english" || currentLang === "en") {
+      newLang = "Hindi"; 
+    } else if (currentLang === "hindi" || currentLang === "hi") {
+      newLang = "English";
     } else {
-        console.warn(
-            "No language folder found in the URL. The page remains unchanged."
-        );
-        return;
+      console.warn("Language folder not recognized.");
+      return;
     }
-
-    console.log("Toggling language from", currentPath, "to", newPath);
+    
+    const newPath = currentPath.replace(langRegex, `/${newLang}/`);
+    console.log(`Redirecting from ${currentPath} to ${newPath}`);
     window.location.href = newPath;
-}
+  }
+  
