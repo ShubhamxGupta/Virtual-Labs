@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="../VLab ChatBot/loader.js" defer></script>
+    <script src="../../../language.js"></script>
+    <title>Virtual Labs</title>
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <div style="display: flex">
+                <div class="logo">
+                    <a href="../landing page/index.html"><img src="../../../assets/img/logo.png"
+                            alt="Virtual Labs Logo" /></a>
+                </div>
+                <hr style="margin: 0 5px" />
+                <div class="branding_text">
+                    <p>की एक पहल</p>
+                    <p style="color: red">Ministry of Education</p>
+                    <p>
+                        आईसीटी के माध्यम से शिक्षा पर राष्ट्रीय मिशन के तहत
+                    </p>
+                </div>
+            </div>
+            <div class="search-login">
+                <input type="search" name="header_search" id="header_search" placeholder="लैब खोजें" />
+                <button type="button">लॉग इन करें / साइन अप करें</button>
+                <button class="translate-btn" onclick="toggleLanguage()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-translate" viewBox="0 0 16 16">
+                        <path
+                            d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z" />
+                        <path
+                            d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav>
+            <button class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#">घर</a></li>
+                <li><a href="#">आउटरीच पोर्टल</a></li>
+                <li><a href="#">भाग लेने वाले संस्थान</a></li>
+                <li><a href="#">एनएमईआईसीटी</a></li>
+                <li><a href="#">हमसे संपर्क करें</a></li>
+                <li><a href="#">हमारे बारे में</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <div class="slide-image" style="background-image: url(img/image-1.jpg)"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="slide-image" style="background-image: url(img/image-2.jpg)"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="slide-image" style="background-image: url(img/image-3.jpg)"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="slide-image" style="background-image: url(img/image-4.jpg)"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="slide-image" style="background-image: url(img/image-5.jpg)"></div>
+            </div>
+        </div>
+    </div>
+    <div class="motivation-container">
+        <div class="motivation-text">
+            <h3>रिमोट-एक्सेस प्रदान करें</h3>
+            <h1>सिमुलेशन-आधारित प्रयोगशालाओं के लिए</h1>
+            <h6>
+                वर्चुअल लैब्स के आसपास एक संपूर्ण शिक्षण प्रबंधन प्रणाली
+            </h6>
+        </div>
+        <div class="motivation-img">
+            <img src="img/motivation.png" alt="motivation-img" />
+        </div>
+    </div>
+    <div style="height: 80px; background-color: cadetblue"></div>
+    <div style="position: absolute; left: 35%; margin: 30px 20px 20px 20px">
+        <h1>वर्चुअल लैब्स के व्यापक क्षेत्र</h1>
+    </div>
+    <div class="branch-container">
+        <a href="#">
+            <div class="ece">
+                <img src="img/ece.jpg" alt="ece" />
+                <p>इलेक्ट्रॉनिक्स और संचार इंजीनियरिंग</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="cse">
+                <img src="img/cse.png" alt="cse" />
+                <p>कंप्यूटर साइंस इंजीनियरिंग</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="electrical">
+                <img src="img/electrical.jpg" alt="electrical" />
+                <p>विद्युत अभियन्त्रण</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="mechanical">
+                <img src="img/mech.jpg" alt="mechanical" />
+                <p>मैकेनिकल इंजीनियरिंग</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="chemical">
+                <img src="img/chemical.png" alt="chemical" />
+                <p>केमिकल इंजीनियरिंग</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="biotech">
+                <img src="img/biotech.jpg" alt="biotech" />
+                <p>जैव प्रौद्योगिकी इंजीनियरिंग</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="civil">
+                <img src="img/civil.png" alt="civil" />
+                <p>असैनिक अभियंत्रण</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="chemicasci">
+                <img src="img/chemsci.jpg" alt="chemicasci" />
+                <p>रसायन विज्ञान इंजीनियरिंग</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="physicalsci">
+                <img src="img/physicalsci.jpg" alt="physicalsci" />
+                <p>भौतिक विज्ञान इंजीनियरिंग</p>
+            </div>
+        </a>
+    </div>
+    <div class="institutions-logo">
+        <h3>भाग लेने वाले संस्थान</h3>
+        <marquee direction="left">
+            <img src="img/amrita-vishwa-vidyapeetham.png" />
+            <img src="img/coe-pune-logo.png" />
+            <img src="img/dayabagh-university.jpg" />
+            <img src="img/iiit-hyderabad.png" />
+            <img src="img/iit-bombay.png" />
+            <img src="img/iit-delhi.png" />
+            <img src="img/iit-guwahati.png" />
+            <img src="img/iit-kanpur.png" />
+            <img src="img/iit-kharagpur.png" />
+            <img src="img/iit-roorkee.jpg" />
+            <img src="img/nit-surathkal.png" />
+        </marquee>
+    </div>
+    <div class="final-container">
+        <div class="Announcements-section">
+            <div class="Announcements">
+                <h3>घोषणाएं</h3>
+                <h6>
+                    *मंत्रालय की विभिन्न परियोजनाएं/आईसीटी पहल
+                    शिक्षा यहां दिए गए लिंक पर उपलब्ध है। कृपया
+                    अधिक जानकारी के लिए यहां क्लिक करें।
+                </h6>
+                <h6>
+                    * कृपया इसका उपयोग करने हेतु ट्यूटोरियल देखने के लिए यहां क्लिक करें
+                    वर्चुअल बॉक्स के माध्यम से फ़्लैश-आधारित लैब्स।
+                </h6>
+                <h6>
+                    * नोडल केंद्र के रूप में नामांकन के लिए कृपया जमा करें
+                    रुचि की अभिव्यक्ति (ईओआई) फॉर्म_2025
+                </h6>
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FT2e3UvKteM?si=K_J41-XclzutqZXV"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="Testimonial-container">
+            <h3>गुणों का वर्ण-पत्र</h3>
+            <div class="Testimonial">
+                <div>
+                    <h5>
+                        "से जुड़े प्राथमिक लाभों में से एक
+                        आभासी प्रयोगशाला का उपयोग करने की क्षमता है
+                        छात्रों को स्व-गति से सीखने में संलग्न होना। यह
+                        प्रौद्योगिकी छात्रों को इसमें शामिल होने में सुविधा प्रदान करती है
+                        अध्ययन करना, तैयारी करना और प्रयोगशाला करना
+                        अपनी सुविधानुसार प्रयोग, चाहे कुछ भी हो
+                        समय और स्थान."
+                    </h5>
+                    <h6>
+                        डॉ मोहम्मद जुबैर अंसारी<br />राष्ट्रीय संस्थान
+                        प्रौद्योगिकी श्रीनगर
+                    </h6>
+                </div>
+                <div>
+                    <h5>
+                        "वर्चुअल लैब्स यूएसएआर, जीजीएसआईपीयू और में कार्यान्वित की जाती हैं
+                        सिद्धांतों को समझने में उपयोगी हैं और
+                        विज्ञान या अन्य विषयों की अवधारणाएँ जो नहीं हो सकतीं
+                        केवल पाठ्यपुस्तकों द्वारा अकेले अध्ययन किया। इसमें महानता है
+                        वास्तविक प्रयोगशाला अनुभवों को बढ़ाने की क्षमता।
+                        इसके अलावा, सर्वोत्तम प्रगतिशील शिक्षा और
+                        वास्तविक प्रयोगों के लिए प्रदर्शन तब प्रकट होता है जब
+                        वर्चुअल प्रयोगशाला कागज आधारित प्रैक्टिकल से पहले हुई
+                        प्रयोग।"
+                    </h5>
+                    <h6>डॉ ख्याति चोपड़ा<br />यूएसएआर<br />जीजीएसआईपीयू</h6>
+                </div>
+                <div>
+                    <h5>
+                        "वर्चुअल लैब्स छात्रों के लिए ज्ञान का बीज है
+                        विज्ञान और प्रौद्योगिकी क्षेत्र का. ऐसा
+                        आश्चर्यजनक मंच सीखने को प्रबुद्ध करेगा
+                        वास्तविकता की ओर बढ़ने से पहले छात्रों का पथ
+                        प्रयोगों के लिए प्रयोगशाला. छात्रों को एहसास हो सकता है
+                        वास्तविक प्रयोगशाला का स्वरूप और अनुभव तथा अनुकूलन
+                        प्रदर्शन में शामिल प्रयास, समय और धन
+                        असली प्रयोगशालाएँ। वर्चुअल लैब्स का सबसे अच्छा हिस्सा उपयोग करना है
+                        यह व्यक्तिगत आराम और सुविधा के साथ है।"
+                    </h5>
+                    <br />
+                    <h6>
+                        डॉ. पंकज के. गोस्वामी<br />एमिटी यूनिवर्सिटी उत्तर
+                        प्रदेश, लखनऊ
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="
+                background-color: gray;
+                height: 50px;
+                display: flex;
+                justify-content: space-evenly;
+            ">
+        <div style="
+                    background-color: white;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                ">
+            <img src="img/Outreach_logo_main_1000dpi.png" style="height: 50px; width: 200px" />
+        </div>
+        <div style="
+                    background-color: rgb(133, 196, 6);
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    justify-content: center;
+                ">
+            <h5 style="margin-top: 15px; font-size: large; color: white">
+                नोडल केन्द्र 1531
+            </h5>
+        </div>
+        <div style="
+                    background-color: rgb(0, 102, 255);
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    justify-content: center;
+                ">
+            <h5 style="margin-top: 15px; font-size: large; color: white">
+                उपयोग 4679904
+            </h5>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h6>वीएलएबी के बारे में</h6>
+                <a href="#">घर</a>
+                <a href="#">About Us</a>
+                <a href="#">हमसे संपर्क करें</a>
+            </div>
+            <div class="footer-section">
+                <h6>त्वरित सम्पक</h6>
+                <a href="#">लैब फीडबैक फॉर्म</a>
+                <a href="#">लैब असेसमेंट फॉर्म</a>
+                <a href="#">अक्सर पूछे जाने वाले प्रश्न</a>
+                <a href="#">सशक्त पोर्टल</a>
+            </div>
+            <div class="footer-section">
+                <h6>संपर्क</h6>
+                <p>
+                    वायरलेस रिसर्च लैब रूम नंबर - 206/आईआईए भारती स्कूल ऑफ
+                    टेलीकॉम भारतीय प्रौद्योगिकी संस्थान दिल्ली हौज खास,
+                    नई दिल्ली-110016
+                </p>
+                <p>ईमेल: support@vlab.co.in</p>
+                <p>फ़ोन: 011-26582050</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
