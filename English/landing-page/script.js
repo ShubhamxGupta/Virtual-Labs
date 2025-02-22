@@ -1,3 +1,10 @@
+var modal = document.getElementById("id01");
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
+
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
@@ -6,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
         navLinks.classList.toggle("active");
     });
 });
-
 
 window.onload = function () {
     let slides = document.getElementsByClassName("carousel-item");
