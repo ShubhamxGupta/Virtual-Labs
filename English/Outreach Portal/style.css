@@ -1,0 +1,19 @@
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
