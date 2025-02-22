@@ -1,0 +1,101 @@
+.hr {
+    border: 1px solid #640d5f;
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #640d5f;
+    color: white;
+}
+
+.contact-nav {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.contact-main {
+    padding: 50px 0;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.contact-text {
+    margin-left: 150px;
+}
+
+.address {
+    display: flex;
+    margin-top: 10px;
+}
+
+address {
+    margin-left: 5px;
+}
+
+svg {
+    margin-top: 1px;
+}
+
+.phone {
+    margin-top: 10px;
+    display: flex;
+}
+
+.phone p {
+    margin-left: 5px;
+}
+
+.email {
+    margin-top: 10px;
+    display: flex;
+}
+
+.email p {
+    margin-left: 5px;
+}
+
+.contact-form {
+    margin-top: 30px;
+    width: 400px;
+}
+
+.contact-form form {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form div {
+    margin-bottom: 15px;
+}
+
+.contact-form form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form form button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
