@@ -69,6 +69,18 @@ a {
     background-color: #eb5b00;
 }
 
+.translate-btn {
+    background-color: white;
+    border: none;
+    margin-left: 5px;
+    padding: 10px 20px;
+}
+
+.translate-btn:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
 /* Navigation Bar */
 nav {
     background-color: #d91656;
