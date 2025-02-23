@@ -1,23 +1,23 @@
 const topics = [
     {
-        name: "Virtual Power Lab",
-        description: "Experiments in Virtual Power Lab.",
-        college: "DAYALBAGH EDUCATIONAL INSTITUTE",
+        name: "वर्चुअल पावर लैब",
+        description: "वर्चुअल पावर लैब में प्रयोग।",
+        college: "दयालबाग शैक्षिक संस्थान",
     },
     {
-        name: "Metal Forming Virtual Simulation Lab",
-        description: "Experiments in Metal Forming Virtual Simulation Lab.",
-        college: "DAYALBAGH EDUCATIONAL INSTITUTE",
+        name: "मेटल फॉर्मिंग वर्चुअल सिमुलेशन लैब",
+        description: "मेटल फॉर्मिंग वर्चुअल सिमुलेशन लैब में प्रयोग।",
+        college: "दयालबाग शैक्षिक संस्थान",
     },
     {
-        name: "3D Printing Virtual Simulation Lab",
-        description: "Experiments in 3D Printing Virtual Simulation Lab.",
-        college: "DAYALBAGH EDUCATIONAL INSTITUTE",
+        name: "3डी प्रिंटिंग वर्चुअल सिमुलेशन लैब",
+        description: "3डी प्रिंटिंग वर्चुअल सिमुलेशन लैब में प्रयोग।",
+        college: "दयालबाग शैक्षिक संस्थान",
     },
     {
-        name: "Control Engineering Lab (New)",
-        description: "Experiments in Control Engineering Lab (New).",
-        college: "DAYALBAGH EDUCATIONAL INSTITUTE",
+        name: "नियंत्रण इंजीनियरिंग लैब (नया)",
+        description: "नियंत्रण इंजीनियरिंग लैब (नया) में प्रयोग।",
+        college: "दयालबाग शैक्षिक संस्थान",
     },
 ];
 
@@ -31,11 +31,11 @@ topics.forEach((topic) => {
         <div class="card-text">
             <h2>${topic.name}</h2>
             <p>${topic.description}</p>
-            <p class="college"><strong>College:</strong> ${topic.college}</p>
+            <p class="college"><strong>कॉलेज:</strong> ${topic.college}</p>
         </div>
         <div class="buttons">
-            <button class="btn white-btn">Reference Books</button>
-            <button class="btn orange-btn">Syllabus Mapping</button>
+            <button class="btn white-btn">संदर्भ पुस्तकें</button>
+            <button class="btn orange-btn">पाठ्यक्रम मैपिंग</button>
         </div>
     `;
 

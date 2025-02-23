@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
@@ -10,6 +11,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+header {
+    width: 100%;
 }
 
 /* Branding Section */
@@ -149,13 +154,14 @@ nav {
 }
 /* College Details Section */
 .clg {
-    width: 90%;
-    max-width: 1200px;
+    width: 95%;
+    max-width: 1350px;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* College Name */
@@ -232,12 +238,17 @@ nav {
     color: #666;
 }
 
+.card-text {
+    height: 130px;
+}
+
 /* Buttons Section */
 .buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
+    align-items: end;
 }
 
 .btn {
