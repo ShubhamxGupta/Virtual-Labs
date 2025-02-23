@@ -1,88 +1,88 @@
 const topics = [
     {
-        name: "Sensors Modeling & Simulation Lab",
-        description: "Experiments in Sensors Modeling & Simulation Lab.",
-        college: "COEP Technological University Pune",
+        name: "संवेदी मॉडलिंग और सिमुलेशन प्रयोगशाला",
+        description: "संवेदी मॉडलिंग और सिमुलेशन प्रयोगशाला में प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "Industrial Automation Lab",
-        description: "Experiments in Industrial Automation Lab.",
-        college: "COEP Technological University Pune",
+        name: "औद्योगिक स्वचालन प्रयोगशाला",
+        description: "औद्योगिक स्वचालन प्रयोगशाला में प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "Electrical Machines (COEP) Lab",
-        description: "Experiments in Electrical Machines (COEP) Lab.",
-        college: "COEP Technological University Pune",
+        name: "इलेक्ट्रिकल मशीनें (सीओईपी) प्रयोगशाला",
+        description: "इलेक्ट्रिकल मशीनें (सीओईपी) प्रयोगशाला में प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "PLC Lab",
-        description: "Experiments in PLC Lab.",
-        college: "COEP Technological University Pune",
+        name: "पीएलसी प्रयोगशाला",
+        description: "पीएलसी प्रयोगशाला में प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "Vibration and Acoustics Lab",
-        description: "Experiments in Vibration and Acoustics Lab.",
-        college: "COEP Technological University Pune",
+        name: "कंपन और ध्वनिकी प्रयोगशाला",
+        description: "कंपन और ध्वनिकी प्रयोगशाला में प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "Micromachining Lab",
-        description: "Experiments in Micromachining Lab.",
-        college: "COEP Technological University Pune",
+        name: "माइक्रोमशीनिंग प्रयोगशाला",
+        description: "माइक्रोमशीनिंग प्रयोगशाला में प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "FAB Lab",
-        description: "Experiments in FAB Lab.",
-        college: "COEP Technological University Pune",
+        name: "एफएबी प्रयोगशाला",
+        description: "एफएबी प्रयोगशाला में प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "Biomedical and Signal Processing Lab",
-        description: "Experiments in Biomedical and Signal Processing Lab.",
-        college: "COEP Technological University Pune",
+        name: "बायोमेडिकल और सिग्नल प्रोसेसिंग प्रयोगशाला",
+        description: "बायोमेडिकल और सिग्नल प्रोसेसिंग प्रयोगशाला में प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "Hybrid Electronics Lab",
-        description: "Experiments in Hybrid Electronics Lab.",
-        college: "COEP Technological University Pune",
+        name: "हाइब्रिड इलेक्ट्रॉनिक्स प्रयोगशाला",
+        description: "हाइब्रिड इलेक्ट्रॉनिक्स प्रयोगशाला में प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "Process Loop Component for Current and Pneumatic Converters Lab",
-        description: "Experiments in Process Loop Component for Current and Pneumatic Converters Lab.",
-        college: "COEP Technological University Pune",
+        name: "प्रक्रिया लूप घटक प्रयोगशाला - करंट और वायवीय कन्वर्टर के लिए",
+        description: "प्रक्रिया लूप घटक प्रयोगशाला - करंट और वायवीय कन्वर्टर के लिए प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "Process Loop Component for High Low Selector and Alarm Annunciators Lab",
-        description: "Experiments in Process Loop Component for High Low Selector and Alarm Annunciators Lab.",
-        college: "COEP Technological University Pune",
+        name: "प्रक्रिया लूप घटक प्रयोगशाला - हाई लो सेलेक्टर और अलार्म एनunciators के लिए",
+        description: "प्रक्रिया लूप घटक प्रयोगशाला - हाई लो सेलेक्टर और अलार्म एनunciators के लिए प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "Process Loop Component for Transmitter and Tank Applications Lab",
-        description: "Experiments in Process Loop Component for Transmitter and Tank Applications Lab.",
-        college: "COEP Technological University Pune",
+        name: "प्रक्रिया लूप घटक प्रयोगशाला - ट्रांसमीटर और टैंक अनुप्रयोगों के लिए",
+        description: "प्रक्रिया लूप घटक प्रयोगशाला - ट्रांसमीटर और टैंक अनुप्रयोगों के लिए प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "Process Loop Component and Control Valve for Various Applications Lab",
-        description: "Experiments in Process Loop Component and Control Valve for Various Applications Lab.",
-        college: "COEP Technological University Pune",
+        name: "प्रक्रिया लूप घटक और नियंत्रण वाल्व प्रयोगशाला - विभिन्न अनुप्रयोगों के लिए",
+        description: "प्रक्रिया लूप घटक और नियंत्रण वाल्व प्रयोगशाला - विभिन्न अनुप्रयोगों के लिए प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "Basics of Pneumatic Components Lab",
-        description: "Experiments in Basics of Pneumatic Components Lab.",
-        college: "COEP Technological University Pune",
+        name: "न्यूनतम वायवीय घटकों की प्रयोगशाला",
+        description: "न्यूनतम वायवीय घटकों की प्रयोगशाला में प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "Engineering Geology Lab (New)",
-        description: "Experiments in Engineering Geology Lab (New).",
-        college: "COEP Technological University Pune",
+        name: "इंजीनियरिंग भूविज्ञान प्रयोगशाला (नई)",
+        description: "इंजीनियरिंग भूविज्ञान प्रयोगशाला (नई) में प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "Instrumentation and Control Lab (New)",
-        description: "Experiments in Instrumentation and Control Lab (New).",
-        college: "COEP Technological University Pune",
+        name: "संस्थापन और नियंत्रण प्रयोगशाला (नई)",
+        description: "संस्थापन और नियंत्रण प्रयोगशाला (नई) में प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
     {
-        name: "Sensors and Instrumentation Lab (New)",
-        description: "Experiments in Sensors and Instrumentation Lab (New).",
-        college: "COEP Technological University Pune",
+        name: "संवेदी और संस्थापन प्रयोगशाला (नई)",
+        description: "संवेदी और संस्थापन प्रयोगशाला (नई) में प्रयोग।",
+        college: "सीओईपी टेक्नोलॉजिकल यूनिवर्सिटी पुणे",
     },
 ];
 
@@ -95,10 +95,10 @@ topics.forEach((topic) => {
     card.innerHTML = `
         <h2>${topic.name}</h2>
         <p>${topic.description}</p>
-        <p class="college"><strong>College:</strong> ${topic.college}</p>
+        <p class="college"><strong>कॉलेज:</strong> ${topic.college}</p>
         <div class="buttons">
-            <button class="btn white-btn">Reference Books</button>
-            <button class="btn orange-btn">Syllabus Mapping</button>
+            <button class="btn white-btn">संदर्भ पुस्तकें</button>
+            <button class="btn orange-btn">पाठ्यक्रम मिलान</button>
         </div>
     `;
 

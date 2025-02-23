@@ -1,88 +1,88 @@
 const topics = [
     {
-        name: "Fluid Mechanics Lab",
-        description: "Experiments in Fluid Mechanics Lab.",
-        college: "NITK SURATHKAL",
+        name: "द्रव यांत्रिकी प्रयोगशाला",
+        description: "द्रव यांत्रिकी प्रयोगशाला में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Transportation Engineering Lab",
-        description: "Experiments in Transportation Engineering Lab.",
-        college: "NITK SURATHKAL",
+        name: "परिवहन इंजीनियरिंग लैब",
+        description: "परिवहन इंजीनियरिंग लैब में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Environmental Engineering Lab I",
-        description: "Experiments in Environmental Engineering Lab I.",
-        college: "NITK SURATHKAL",
+        name: "पर्यावरण इंजीनियरिंग लैब I",
+        description: "पर्यावरण इंजीनियरिंग लैब I में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Environmental Engineering Lab II",
-        description: "Experiments in Environmental Engineering Lab II.",
-        college: "NITK SURATHKAL",
+        name: "पर्यावरण इंजीनियरिंग लैब II",
+        description: "पर्यावरण इंजीनियरिंग लैब II में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Fluid Machinery Lab",
-        description: "Experiments in Fluid Machinery Lab.",
-        college: "NITK SURATHKAL",
+        name: "द्रव मशीनरी लैब",
+        description: "द्रव मशीनरी लैब में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Marine Structure Lab",
-        description: "Experiments in Marine Structure Lab.",
-        college: "NITK SURATHKAL",
+        name: "समुद्री संरचना प्रयोगशाला",
+        description: "समुद्री संरचना प्रयोगशाला में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Mining Geology Lab",
-        description: "Experiments in Mining Geology Lab.",
-        college: "NITK SURATHKAL",
+        name: "खनन भूविज्ञान प्रयोगशाला",
+        description: "खनन भूविज्ञान प्रयोगशाला में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Industrial Electric Drives Lab",
-        description: "Experiments in Industrial Electric Drives Lab.",
-        college: "NITK SURATHKAL",
+        name: "औद्योगिक इलेक्ट्रिक ड्राइव लैब",
+        description: "औद्योगिक इलेक्ट्रिक ड्राइव लैब में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Mechanics of Machine Lab I",
-        description: "Experiments in Mechanics of Machine Lab I.",
-        college: "NITK SURATHKAL",
+        name: "मशीन लैब I के यांत्रिकी",
+        description: "मशीन लैब I के यांत्रिकी में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Machine Dynamics & Mechanical Vibration Lab",
-        description: "Experiments in Machine Dynamics & Mechanical Vibration Lab.",
-        college: "NITK SURATHKAL",
+        name: "मशीन डायनेमिक्स एवं मैकेनिकल कंपन लैब",
+        description: "मशीन डायनेमिक्स और मैकेनिकल कंपन लैब में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Process Control, Reaction Engineering and Unit Operations Lab",
-        description: "Experiments in Process Control, Reaction Engineering and Unit Operations Lab.",
-        college: "NITK SURATHKAL",
+        name: "प्रक्रिया नियंत्रण, प्रतिक्रिया इंजीनियरिंग और इकाई संचालन प्रयोगशाला",
+        description: "प्रक्रिया नियंत्रण, प्रतिक्रिया इंजीनियरिंग और इकाई संचालन प्रयोगशाला में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Strength of Materials Lab",
-        description: "Experiments in Strength of Materials Lab.",
-        college: "NITK SURATHKAL",
+        name: "सामग्री प्रयोगशाला की ताकत",
+        description: "सामग्री प्रयोगशाला की ताकत में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Dynamics of Machine Lab",
-        description: "Experiments in Dynamics of Machine Lab.",
-        college: "NITK SURATHKAL",
+        name: "मशीन लैब की गतिशीलता",
+        description: "मशीन लैब की गतिशीलता में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Substation Automation Lab",
-        description: "Experiments in Substation Automation Lab.",
-        college: "NITK SURATHKAL",
+        name: "सबस्टेशन ऑटोमेशन लैब",
+        description: "सबस्टेशन ऑटोमेशन लैब में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Mechanics of Machines Lab 2",
-        description: "Experiments in Mechanics of Machines Lab 2.",
-        college: "NITK SURATHKAL",
+        name: "मशीन प्रयोगशाला 2 के यांत्रिकी",
+        description: "मशीन प्रयोगशाला 2 के यांत्रिकी में प्रयोग।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Geotechnical Engineering Lab (New)",
-        description: "Experiments in Geotechnical Engineering Lab (New).",
-        college: "NITK SURATHKAL",
+        name: "जियोटेक्निकल इंजीनियरिंग लैब (नया)",
+        description: "जियोटेक्निकल इंजीनियरिंग लैब में प्रयोग (नया)।",
+        college: "एनआईटीके सूरथकल",
     },
     {
-        name: "Engineering Graphics Lab (New)",
-        description: "Experiments in Engineering Graphics Lab (New).",
-        college: "NITK SURATHKAL",
+        name: "इंजीनियरिंग ग्राफ़िक्स लैब (नया)",
+        description: "इंजीनियरिंग ग्राफ़िक्स लैब में प्रयोग (नया)।",
+        college: "एनआईटीके सूरथकल",
     },
 ];
 
@@ -95,10 +95,10 @@ topics.forEach((topic) => {
     card.innerHTML = `
         <h2>${topic.name}</h2>
         <p>${topic.description}</p>
-        <p class="college"><strong>College:</strong> ${topic.college}</p>
+        <p class="college"><strong>कॉलेज:</strong> ${topic.college}</p>
         <div class="buttons">
-            <button class="btn white-btn">Reference Books</button>
-            <button class="btn orange-btn">Syllabus Mapping</button>
+            <button class="btn white-btn">धार्मिक आस्था</button>
+            <button class="btn orange-btn">सिलेबस मैपिंग</button>
         </div>
     `;
 
