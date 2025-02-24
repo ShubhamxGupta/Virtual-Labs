@@ -12,11 +12,13 @@ function toggleLanguage() {
     const match = currentPath.match(langRegex);
 
     if (!match) {
-        console.warn("No recognized language folder found in URL. Please ensure the URL starts with '/English/' or '/Hindi/'.");
+        console.warn(
+            "No recognized language folder found in URL. Please ensure the URL starts with '/English/' or '/Hindi/'."
+        );
         return;
     }
 
-    let newLang = (match[1].toLowerCase() === "english") ? "Hindi" : "English";
+    let newLang = match[1].toLowerCase() === "english" ? "Hindi" : "English";
     const newPath = currentPath.replace(langRegex, "/" + newLang + "/");
 
     console.log("Redirecting to:", newPath);

@@ -1,94 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Biotechnology and Biomedical Engineering</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="../../../assets/commonCSS/footer.css" />
+        <link rel="stylesheet" href="../../../assets/commonCSS/header.css" />
+        <script src="../../VLab ChatBot/loader.js" defer></script>
+        <script src="../../../language.js"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biotechnology and Biomedical Engineering</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="../../../assets/commonCSS/footer.css">
-    <link rel="stylesheet" href="../../../assets/commonCSS/header.css">
-    <script src="../../VLab ChatBot/loader.js" defer></script>
-    <script src="../../../language.js"></script>
-</head>
-
-<body>
-
-    <header>
-        <div class="branding">
-            <div class="logo">
-                <a href="../landing page/index.html"><img src="../../../assets/img/logo.png"
-                        alt="Virtual Labs Logo" /></a>
+    <body>
+        <header>
+            <div class="branding">
+                <div class="logo">
+                    <a href="../landing-page/index.html"
+                        ><img
+                            src="../../../assets/img/logo.png"
+                            alt="Virtual Labs Logo"
+                    /></a>
+                </div>
+                <div class="branding_text">
+                    <p>A initiative of</p>
+                    <p style="color: red">Ministry of Education</p>
+                    <p>Under the National Mission on Education through ICT</p>
+                </div>
+                <div class="search-login">
+                    <input
+                        type="search"
+                        name="header_search"
+                        id="header_search"
+                        placeholder="Search Lab"
+                    />
+                    <button type="button">Login / Sign Up</button>
+                    <button class="translate-btn" onclick="toggleLanguage()">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-translate"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"
+                            />
+                            <path
+                                d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"
+                            />
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div class="branding_text">
-                <p>A initiative of</p>
-                <p style="color: red">Ministry of Education</p>
-                <p>Under the National Mission on Education through ICT</p>
-            </div>
-            <div class="search-login">
-                <input type="search" name="header_search" id="header_search" placeholder="Search Lab" />
-                <button type="button">Login / Sign Up</button>
-                <button class="translate-btn" onclick="toggleLanguage()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-translate" viewBox="0 0 16 16">
-                        <path
-                            d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z" />
-                        <path
-                            d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Outreach Portal</a></li>
-                <li><a href="#">Participating Institutes</a></li>
-                <li><a href="#">NMEICT</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../../landing-page/index.html">Home</a></li>
+                    <li>
+                        <a href="../../Outreach Portal/index.html"
+                            >Outreach Portal</a
+                        >
+                    </li>
+                    <li><a href="#">Participating Institutes</a></li>
+                    <li><a href="#">NMEICT</a></li>
+                    <li>
+                        <a href="../../Contact Us/index.html">Contact Us</a>
+                    </li>
+                    <li><a href="../../About Us/">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
 
-
-    <div class="body-main">
-        <div class="type1">
-            <h1 class="title">Biotechnology and Biomedical Engineering</h1>
-            <div class="cse-cards" id="cseCards"></div>
-        </div>
-    </div>
-    <!-- <img src="cselogo.avif" alt="Fixed Image" class="fixed-image"> -->
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h6>About VLAB</h6>
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
-            </div>
-            <div class="footer-section">
-                <h6>Quick Links</h6>
-                <a href="#">Lab Feedback Form</a>
-                <a href="#">Lab Assessment Form</a>
-                <a href="#">FAQ</a>
-                <a href="#">Shakshat Portal</a>
-            </div>
-            <div class="footer-section">
-                <h6>CONTACT</h6>
-                <p>Wireless Research Lab
-                    Room No - 206/IIA
-                    Bharti School of Telecom
-                    Indian Institute of Technology Delhi
-                    Hauz Khas, New Delhi-110016</p>
-                <p>Email: support@vlab.co.in</p>
-                <p>Phone: 011-26582050</p>
+        <div class="body-main">
+            <div class="type1">
+                <h1 class="title">Biotechnology and Biomedical Engineering</h1>
+                <div class="cse-cards" id="cseCards"></div>
             </div>
         </div>
-    </footer>
+        <!-- <img src="cselogo.avif" alt="Fixed Image" class="fixed-image"> -->
 
-</body>
-<script src="script.js"></script>
-
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h6>About VLAB</h6>
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="footer-section">
+                    <h6>Quick Links</h6>
+                    <a href="#">Lab Feedback Form</a>
+                    <a href="#">Lab Assessment Form</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Shakshat Portal</a>
+                </div>
+                <div class="footer-section">
+                    <h6>CONTACT</h6>
+                    <p>
+                        Wireless Research Lab Room No - 206/IIA Bharti School of
+                        Telecom Indian Institute of Technology Delhi Hauz Khas,
+                        New Delhi-110016
+                    </p>
+                    <p>Email: support@vlab.co.in</p>
+                    <p>Phone: 011-26582050</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="script.js"></script>
 </html>
