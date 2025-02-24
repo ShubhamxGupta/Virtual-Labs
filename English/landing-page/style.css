@@ -71,28 +71,30 @@
 }
 
 .branch-container div {
-    height: 300px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    border-radius: 10%;
+    border-radius: 9%;
     margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
     background-color: #e8f9ff;
+    align-items: center;
 }
 
 .branch-container img {
-    width: 300px;
+    width: 350px;
     height: 200px;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-right: 15px;
     border-radius: 10%;
 }
 
 .branch-container p {
     width: 300px;
     text-align: center;
-    margin: 30px 30px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 marquee img {
@@ -108,7 +110,9 @@ marquee img {
 }
 
 .institutions-logo h3 {
+    padding-top: 15px;
     text-align: center;
+    text-decoration: underline;
 }
 
 .Announcements-section {
